@@ -111,8 +111,7 @@
     color: rgb(255, 0, 0);
     background-color: transparent;
   }
-  
-  /* Additional styles for the main link */
+
   .custom-dropdown .custom-link {
     color: #333;
     text-decoration: none;
@@ -163,8 +162,8 @@
   
   .right .dropdown-menuu {
     border-radius: 0;
-    top: 40px; /* Adjust this value to control vertical positioning */
-    left: -350px !important; /* Adjust this value to control horizontal positioning */
+    top: 40px; 
+    left: -350px !important; 
   }
   
   .dropdown-menu[data-bs-popper] {
@@ -184,13 +183,13 @@
     right: -10px;
   }
   
-  /* Original styling */
+
   .bottom-nav {
     position: absolute;
     bottom: 0;
     width: 100%;
-    left: 0; /* Add this to ensure full width alignment */
-    right: 0; /* Add this to ensure full width alignment */
+    left: 0; 
+    right: 0; 
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -216,7 +215,6 @@
     padding: clamp(6px, 2vw, 12px) clamp(10px, 3vw, 20px);
   }
   
-  /* Add this media query for mobile column layout */
   @media (max-width: 576px) {
     .language-currency-buttons {
       flex-direction: column;
@@ -278,13 +276,14 @@
     flex-direction: column;
     gap: 20px;
   }
-  
+
+  /* Image Styling */
   .carousel-image {
     flex: 1;
     text-align: right;
   }
   
-  /* Image Styling */
+
   .carousel-image img {
     max-width: 100%;
     height: auto;
@@ -324,7 +323,7 @@
     opacity: 0.8;
   }
   
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     .carousel-content {
       flex-direction: column-reverse;
@@ -437,7 +436,7 @@
     }
 }
 
-/* Rest of your styles remain the same */
+
 .overlay {
     position: absolute;
     top: 0;
@@ -541,7 +540,6 @@
   transform: scale(1.1);
 }
 
-/* Optional: Add a subtle overlay on hover for better text readability */
 
 .section:hover::after {
   opacity: 1;
@@ -596,7 +594,7 @@
 }
 
 .container.section {
-  overflow: hidden; /* To contain the scaling effect */
+  overflow: hidden; 
 }
 .promo-section {
     width: 100%;
@@ -632,8 +630,6 @@
 }
 
 
-
-/* Media Queries */
 @media (max-width: 768px) {
 
     .promo-section {
@@ -662,7 +658,7 @@
 
 @media (max-width: 576px) {
   .promo-section {
-    height: 250px; /* Increased height for mobile */
+    height: 250px;
   }
 
   .caption-promo p {
@@ -689,14 +685,14 @@
 
 }
 
-/* Container for each image pair */
+
 .image-container {
     position: relative;
     width: 100%;
     aspect-ratio: 15/19;
 }
 
-/* Styles for both default and hover images */
+
 .image-container img {
     position: absolute;
     top: 0;
@@ -708,38 +704,38 @@
     backface-visibility: hidden;
 }
 
-/* Default image */
+
 .image-default {
     opacity: 1;
     transition: opacity 0.3s ease;
 }
 
-/* Hover image */
+
 .image-hover {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Hover Link */
+
 .hover-link {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0; /* Changed padding to vertical only */
+    padding: 10px 0; 
     background-color: #f0f0f0;
     text-decoration: none;
-    color: #000000; /* Changed to white for better contrast */
+    color: #000000; 
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 2;
-    text-align: center; /* Center the text */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    text-align: center; 
+    box-sizing: border-box; 
     transition: all ease-in-out 0.3s;
 }
 
 
-/* Hover effects */
+
 .image-container:hover .image-default {
     opacity: 0;
 }
@@ -752,7 +748,7 @@
     opacity: 1;
 }
 
-/* Optional: Add hover effect for the link itself */
+
 .hover-link:hover {
     background-color: #da2929;
     color: #f0f0f0;
@@ -760,7 +756,6 @@
 }
 
 
-/* Labels Container */
 .labels {
     position: absolute;
     top: 10px;
@@ -787,7 +782,7 @@
     background-color: #333;
     color: white;
 }
-/* Icon Container */
+
 .icon-container {
     position: absolute;
     display: flex;
@@ -800,9 +795,9 @@
     z-index: 2;
 }
 
-/* Icon Links */
 
-/* Icon Links with Tooltip */
+
+/* Icon  Tooltip */
 .icon-link {
     position: relative;
     width: 40px;
@@ -835,7 +830,6 @@
     transition: all 0.3s ease;
 }
 
-/* Triangle Pointer */
 .icon-link::before {
     content: '';
     position: absolute;
@@ -850,7 +844,7 @@
     transition: all 0.3s ease;
 }
 
-/* Show tooltip and triangle on hover */
+
 .icon-link:hover::after {
     opacity: 1;
     visibility: visible;
@@ -868,12 +862,12 @@
     transform: translateY(-5px);
 }
 
-/* Show icons on container hover */
+
 .image-container:hover .icon-container {
     opacity: 1;
 }
 
-/* Optional: Add animation for each icon */
+
 .icon-container .icon-link {
     transform: translateY(20px);
     opacity: 0;
@@ -885,7 +879,6 @@
     opacity: 1;
 }
 
-/* Delay each icon animation */
 .icon-container .icon-link:nth-child(1) {
     transition-delay: 0.1s;
 }
@@ -947,7 +940,7 @@
     }
 }
 
-/* Adjust tooltip position for smaller screens */
+
 @media (max-width: 768px) {
     .icon-link::after {
         padding: 4px 20px;
@@ -1006,7 +999,7 @@ h2 {
     }
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 991px) {
     .title-section {
         margin-bottom: 2rem;

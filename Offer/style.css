@@ -20,7 +20,6 @@
   transform: scale(1.1);
 }
 
-/* Optional: Add a subtle overlay on hover for better text readability */
 
 .section:hover::after {
   opacity: 1;
@@ -75,7 +74,7 @@
 }
 
 .container.section {
-  overflow: hidden; /* To contain the scaling effect */
+  overflow: hidden;
 }
 .promo-section {
     width: 100%;
@@ -141,7 +140,7 @@
 
 @media (max-width: 576px) {
   .promo-section {
-    height: 250px; /* Increased height for mobile */
+    height: 250px; 
   }
 
   .caption-promo p {
