@@ -28,73 +28,101 @@
    
 
 
-
-
-
-
-
-
-
-
-
-<!--     
-    <div class="swiper-container">
+    <div class="container">
+      <h1>OUR BLOG</h1>
+      <div class="swiper blog-swiper mt-5">
         <div class="swiper-wrapper">
-            
-            <div class="swiper-slide">
-                <div class="blog-post">
-
-                    <span class="date-label">APR 10, 2024</span>
-                    
-
-                    <div class="image-container">
-                        <img src="../images/Home/blog-1-1174x862.jpg"  alt="Living Room">
-
-                        <div class="profile-icon">
-                            <img src="../images/Home/profile.jpeg" alt="Profile">
-                        </div>
+          <!-- First Slide -->
+          <div class="swiper-slide">
+            <div class="blog-post d-flex ">
+              <div class="blog-post-inner d-flex flex-column flex-lg-row align-items-center gap-5">
+                <div class="image-container  position-relative">
+                  <img src="../images/Home/blog-1-1174x862.jpg" class="img-fluid h-100 w-100" alt="Living Room">
+                  <div class="tags-blog d-flex justify-content-between flex-column align-content-between h-100 position-absolute top-0 p-4">
+                    <div class="tags-blog-date bg-white text-center">
+                      <span class="date">APR 10, 2024</span>
                     </div>
-                    
-
-                    <div class="content">
-                        <div class="tags">FURNITURE, TABLE</div>
-                        <h2>The Secrets to a Living Room that Draws You In</h2>
-                        <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada</p>
-                        <a href="#" class="read-more">READ MORE</a>
+                    <div class="tags-blog-profile bottom-0">
+                      <a href=""><img src="../images/Home/profile.jpeg" class="img-fluid w-25 rounded-5" alt=""></a>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="blog-post">
-                    
-                    <span class="date-label">APR 10, 2024</span>
-                    
-                    
-                    <div class="image-container">
-                        <img src="../images/Home/blog-2-1174x862.jpg" alt="Living Room">
-
-                        <div class="profile-icon">
-                            <img src="../images/Home/profile.jpeg" alt="Profile">
-                        </div>
-                    </div>
-                    
-
-                    <div class="content">
-                        <div class="tags">FURNITURE, TABLE</div>
-                        <h2>The Secrets to a Living Room that Draws You In</h2>
-                        <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada</p>
-                        <a href="#" class="read-more">READ MORE</a>
-                    </div>
+                <div class="col-12 col-lg-5 col-md-4 content-container d-flex flex-column gap-1 py-3 ">
+                  <div class="tags">
+                    <span>FURNITURE</span>, <span>TABLE</span>
+                  </div>
+                  <h2>The Secrets to a Living Room that Draws You In</h2>
+                  <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada</p>
+                  <a href="">READ MORE</a>
                 </div>
+              </div>
             </div>
-
+          </div>
+     
+          <!-- Second Slide -->
+          <div class="swiper-slide">
+            <div class="blog-post">
+              <div class="blog-post-inner d-flex flex-column flex-lg-row align-items-center gap-5">
+                <div class="image-container position-relative">
+                  <img src="../images/Home/blog-2-1174x862.jpg" class="img-fluid h-100 w-100" alt="Living Room">
+                  <div class="tags-blog d-flex justify-content-between flex-column align-content-between h-100 position-absolute top-0 p-4">
+                    <div class="tags-blog-date bg-white text-center">
+                      <span class="date">APR 10, 2024</span>
+                    </div>
+                    <div class="tags-blog-profile bottom-0">
+                      <a href=""><img src="../images/Home/profile.jpeg" class="img-fluid w-25 rounded-5" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-5 col-md-4  content-container d-flex flex-column gap-1 py-3 ">
+                  <div class="tags">
+                    <span>FURNITURE</span>, <span>TABLE</span>
+                  </div>
+                  <h2>The Secrets to a Living Room that Draws You In</h2>
+                  <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada</p>
+                  <a href="">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="swiper-button-prev"></div>
+        
         <div class="swiper-button-next"></div>
-    </div> -->
+        <div class="swiper-button-prev"></div>
+      </div>
+     </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script>
+const swiper = new Swiper('.blog-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  loopedSlides: 2,
+  slidesOffsetAfter: 120,
+  infinite: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  speed: 800,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 1.1,
+      spaceBetween: 20
+    },
+    992: {
+      slidesPerView: 1.19,
+      spaceBetween: 60
+    }
+  }
+});
+      </script>
   </body>
 </html>
