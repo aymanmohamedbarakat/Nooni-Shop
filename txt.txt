@@ -21,3 +21,9 @@ Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam
 READ MORE
 alt="Feng Shui Room Design"
 .............slide 2...............
+
+
+<h2>10%</h2>
+                <p>Get More Pay Less</p>
+                <p>On orders $500 + Use Coupon Code: <span class="fw-bolder">WSD10</span></p>
+              
