@@ -124,18 +124,18 @@
 }
 
 /* Heart icon always visible */
-.icon-container .icon-link:first-child {
+/* .icon-container .icon-link:first-child {
     opacity: 1;
     bottom: 50px;
     visibility: visible;
-}
+} */
 
 /* Other icons initial state */
-.icon-container .icon-link:not(:first-child) {
+/* .icon-container .icon-link:not(:first-child) {
     opacity: 0;
     bottom: 20px;
     transition: all 0.3s ease;
-}
+} */
 
 /* Move container up on hover */
 .image-container:hover .icon-container {
