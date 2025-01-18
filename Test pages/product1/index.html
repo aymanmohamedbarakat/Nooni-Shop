@@ -635,14 +635,14 @@
       const quantitySpan = document.querySelector(".quantity span");
 
       function quantityMinus() {
-        let currentValue = parseInt(quantitySpan.textContent);
+        let currentValue = +quantitySpan.textContent;
         if (currentValue > 1) {
           quantitySpan.textContent = currentValue - 1;
         }
       }
 
       function quantityPlus() {
-        let currentValue = parseInt(quantitySpan.textContent);
+        let currentValue = +quantitySpan.textContent;
         quantitySpan.textContent = currentValue + 1;
       }
     </script>

@@ -1,0 +1,12 @@
+Bed: 7 products
+Bedroom Furniture: 18 products
+Cabinet: 5 products
+Chair: 12 products
+Dining & Kitchen: 25 products
+Home Office: 23 products
+Lamp: 7 products
+Living Room: 24 products
+New & Now: 33 products
+Outdoor Lounge: 23 products
+Sofa: 8 products
+Table: 5 products

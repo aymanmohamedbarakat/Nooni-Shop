@@ -1347,7 +1347,7 @@ h2 {
   }
 
   .footer-bottom-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     align-items: center;
   }
@@ -1365,13 +1365,12 @@ h2 {
   }
 
   .footer-title {
-    text-align: center;
+    text-align: left
   }
 
   .footer-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 }
 /* Footer End*/
