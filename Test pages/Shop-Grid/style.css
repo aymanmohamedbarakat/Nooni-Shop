@@ -324,3 +324,29 @@ display: none;
         font-size: 14px;
     }
 }
+
+
+
+.pagination {
+    gap: 5px;
+}
+
+.page-link {
+    border: none;
+    color: #000;
+    padding: 8px 12px;
+}
+
+.page-item.active .page-link {
+    background-color: #000;
+    color: #fff;
+}
+
+.page-link:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
