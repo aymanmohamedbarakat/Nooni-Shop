@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
@@ -6,25 +6,157 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-family: 'Inter', sans-serif;
 }
+
 body {
   min-height: 100vh;
 }
+
+
+/* 
 :root {
-  --text-primary: #000012;
-  --text-secondary: #1d1a17;
-  --text-tertiary: #b2b2b2;
-  --bg-primary: #000000;
-  --bg-hot: #d10202;
-  --bg-sold: #979797;
-  --hover-primary: #d10202;
+  /* Background colors 
+  --bg-white: #ffffff;
+  --bg-gray: #ffff90;
+  --bg-light: #ededcd;
+  --bg-pink: #ffddc8;
+  --bg-green: #40bf52;
+  --bg-medium-gray: #919191;
+  --bg-red: #d10202;
+  --bg-black: #000000;
+  --bg-dark1: #000000;
+  --bg-dark2: #000000;
+  --bg-dark3: #00000c;
+
+  /* Text colors 
+  --text-white: #ffffff;
+  --text-gray: #ffff90;
+  --text-medium: #959595;
+  --text-dark: #848484;
+  --text-red: #d10202;
+  --text-black: #000000;
+
+  /* Fill colors 
+  --fill-white: #ffffff;
+  --fill-gray: #808080;
+
+  /* Border colors 
+  --border-white: #ffffff;
+  --border-light: #ebebeb;
+  --border-medium: #d9d9d9;
+  --border-dark: #d5d5d5;
+  --border-black: #000000;
+  --border-deep: #00000044;
+
+  /* Font Sizes 
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+
+  /* Font Weights 
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Transitions 
+  --transition-speed: 0.3s;
+  --transition-ease: ease;
 }
 
-a {
-  text-decoration: none;
+
+/* Global Reset and Base Styles */
+
+
+/* Headings (h1 to h6) 
+h1, h2, h3, h4, h5, h6 {
   color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
+
+h1 {   
+  font-size: clamp(2.5rem, 7.2vw, 4.5rem);   
+
+}  
+
+h2 {   
+  font-size: clamp(2.5rem, 7.2vw, 4.5rem);   
+  line-height: clamp(2.875rem, 9vw, 1rem); 
+}  
+
+h3 {   
+  font-size: clamp(2.5rem, 7.2vw, 4.5rem);   
+}  
+
+h4 {   
+  font-size: clamp(1rem, 4vw, 3rem); 
+}  
+
+h5 {   
+  font-size: clamp(1rem, 3vw, 2.25rem); 
+}  
+
+h6 {   
+  font-size: clamp(0.875rem, 2.5vw, 1.5rem); 
+}
+
+/* Paragraph Styles 
+p {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  font-size: clamp(14px, 4vw, 16px);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+/* Span Styles 
+span {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 400;
+}
+
+/* Link Styles 
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #d10202;
+}
+
+/* Label Styles 
+.label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.label.hot {
+  background-color: #d10202;
+  color: #ffffff;
+}
+
+.label.sold {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+/* Strong Tag Styles 
+strong {
+  font-weight: 700;
+} */
