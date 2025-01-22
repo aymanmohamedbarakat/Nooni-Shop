@@ -18,27 +18,60 @@
     <header class="container-fluid col-12 mt-2 navbar sticky-top" id="#navbar">
       <nav class="container d-flex justify-content-between" id="#navbarr">
         <div class="row w-100 align-items-center">
-          <div class="col-4 col-md-3 col-lg-4 d-flex align-items-center gap-3">
-            <!-- Menu Button -->
-            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-              <img src="/placeholder.svg?height=24&width=24" alt="Menu" width="24" height="24" />
-            </button>
-            
-            <!-- Search Button -->
-            <button class="btn p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#searchPanel">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-              </svg>
-            </button>
-          </div>
-    
-
-        <div
-          class="center col-4 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+                <div
+                class="left col-4 col-md-3 col-lg-4 d-flex justify-content-start align-items-center gap-4"
+          id="#navbar"
         >
-          <img src="../../assets/images/Header/logo.png" width="200" class="img-fluid" alt="" />
+          <!-- Desktop burger menu trigger -->
+          <img
+            src="../assets/images/Header/burger-bar.png"
+            class="d-none d-lg-block"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExampleDesktop"
+            role="button"
+            aria-controls="offcanvasExampleDesktop"
+            width="25"
+            alt="Menu"
+          />
+          <!-- Mobile burger menu trigger -->
+          <img
+            src="../assets/images/Header/burger-bar.png"
+            class="d-block d-lg-none"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExampleMobile"
+            role="button"
+            aria-controls="offcanvasExampleMobile"
+            width="25"
+            alt="Menu"
+          />
+  
+          <div
+            class="search-icon"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#searchOffcanvas"
+            role="button"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </div>
         </div>
-
+  
+        <div
+        class="center col-4 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+        >
+          <img src="../assets/images/Header/logo.png" width="200" class="img-fluid" alt="" />
+        </div>
+  
         <div class="right col-4 col-md-3 col-lg-4 d-flex justify-content-end align-items-center gap-3">
           <div class="dropdown d-none d-md-flex d-lg-flex">
             <button
@@ -109,7 +142,7 @@
               </form>
             </div>
           </div>
-
+  
           <div class="icons-svg position-relative">
             <div class="icon-heart">
               <svg
@@ -127,7 +160,7 @@
             </div>
             <span class="position-absolute">0</span>
           </div>
-
+  
           <div class="icons-svg position-relative">
             <div
               class="icon-cart-shopping"
@@ -152,13 +185,10 @@
             <span class="position-absolute">0</span>
           </div>
         </div>
-
         </div>
-          
-
-
+  
       </nav>
-
+  
       <!-- Desktop Burger Menu -->
       <div
         class="d-none d-lg-flex d-md-flex offcanvas offcanvas-start"
@@ -650,6 +680,10 @@
         </div>
       </div>
     </header>
+
+
+
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
