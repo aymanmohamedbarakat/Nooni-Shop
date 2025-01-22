@@ -34,18 +34,16 @@
   </head>
   <body>
     <!-- /* Navbar start */ -->
-    <header
-      class="container-fluid col-12 mt-2 navbar position-relative"
-      id="#navbar"
-    >
+    <header class="container-fluid col-12 mt-2 navbar position-relative" id="#navbar">
       <nav class="container d-flex justify-content-between" id="#navbarr">
+        <div class="row d-flex w-100 align-items-center">
         <div
-          class="left d-flex justify-content-center align-items-center gap-4"
+          class="left col-4 col-md-3 col-lg-4 d-flex justify-content-start align-items-center gap-4"
           id="#navbar"
         >
           <!-- Desktop burger menu trigger -->
           <img
-            src="../assets/images/Header/burger-bar.png"
+            src="../../assets/images/Header/burger-bar.png"
             class="d-none d-lg-block"
             data-bs-toggle="offcanvas"
             href="#offcanvasExampleDesktop"
@@ -56,7 +54,7 @@
           />
           <!-- Mobile burger menu trigger -->
           <img
-            src="../assets/images/Header/burger-bar.png"
+          src="../../assets/images/Header/burger-bar.png"
             class="d-block d-lg-none"
             data-bs-toggle="offcanvas"
             href="#offcanvasExampleMobile"
@@ -88,12 +86,12 @@
         </div>
 
         <div
-          class="center d-flex justify-content-center align-items-center gap-4"
+          class="center col-4 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
         >
-          <img src="../assets/images/Header/logo.png" width="150" alt="" />
+          <img src="../../assets/images/Header/logo.png" width="100" class="img-fluid" alt="" />
         </div>
 
-        <div class="right d-flex align-items-center gap-4">
+        <div class="right col-4 col-md-3 col-lg-4 d-flex justify-content-end align-items-center gap-3">
           <div class="dropdown d-none d-md-flex d-lg-flex">
             <button
               class="btn p-0 border border-0"
@@ -206,6 +204,11 @@
             <span class="position-absolute">0</span>
           </div>
         </div>
+
+        </div>
+          
+
+
       </nav>
 
       <!-- Desktop Burger Menu -->
@@ -228,7 +231,7 @@
           <!-- Your existing desktop menu items -->
           <div class="dropdown">
             <a
-              href="../index.html"
+              href="#"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -239,24 +242,12 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 2</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 3</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 2</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 3</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Furniture 1</a></li>
+              <li><a class="dropdown-item" href="#">Furniture 2</a></li>
+              <li><a class="dropdown-item" href="#">Furniture 3</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 1</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 2</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 3</a></li>
             </ul>
           </div>
 
@@ -273,36 +264,22 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li>
-                <a class="dropdown-item" href="#">Shop Grid</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Scroll Sidebar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Filter Sidebar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Filter Dropdown</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+              <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
               <li>
                 <a class="dropdown-item" href="#">Float Filter Sidebar</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Load More Button</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Infinity Scroll</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Ajax Pagination</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Load More Button</a></li>
+              <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+              <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
             </ul>
           </div>
 
           <div class="dropdown">
             <a
-              href="./Product.html"
+              href="#"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -314,26 +291,16 @@
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
               <li>
-                <a class="dropdown-item" href="./Product.html">Product 01</a>
+                <a class="dropdown-item" href="../pages/Product1.html"
+                  >Product 01</a
+                >
               </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 02</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 03</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 04</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 05</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 06</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 07</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Product 02</a></li>
+              <li><a class="dropdown-item" href="#">Product 03</a></li>
+              <li><a class="dropdown-item" href="#">Product 04</a></li>
+              <li><a class="dropdown-item" href="#">Product 05</a></li>
+              <li><a class="dropdown-item" href="#">Product 06</a></li>
+              <li><a class="dropdown-item" href="#">Product 07</a></li>
               <li><a class="dropdown-item" href="#">Product 08</a></li>
             </ul>
           </div>
@@ -362,11 +329,21 @@
             </ul>
           </div>
 
-          <a href="./Aboutus.html">
+          <a
+            href="#"
+            class="d-flex justify-content-between align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="custom-link">About us</span>
           </a>
 
-          <a href="./Contactus.html">
+          <a
+            href="#"
+            class="d-flex justify-content-between align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="custom-link">Contact us</span>
           </a>
           <!-- Repeat for other menu items -->
@@ -386,11 +363,11 @@
             class="offcanvas-title d-flex justify-content-center"
             id="offcanvasLabel"
           >
-            <img src="../assets/images/Header/logo.png" width="60%" alt="" />
+            <img src="../images/Header/logo.png" width="60%" alt="" />
           </div>
         </div>
 
-        <div class="container px-4">
+        <div class="container">
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
@@ -399,7 +376,11 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Home</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Home</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
@@ -421,34 +402,24 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Shop</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Shop</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Shop Grid</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Scroll Sidebar</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Filter Sidebar</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Filter Dropdown</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Float Filter Sidebar</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="#">Load More Button</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Infinity Scroll</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Ajax Pagination</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Load More Button</a></li>
+                <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+                <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
               </ul>
             </div>
           </div>
@@ -461,34 +432,26 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Product</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Product</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./Product.html">Product 01</a>
+                  <a class="dropdown-item" href="../pages/Product1.html"
+                    >Product 01</a
+                  >
                 </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 02</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 03</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 04</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 05</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 06</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 07</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 08</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Product 02</a></li>
+                <li><a class="dropdown-item" href="#">Product 03</a></li>
+                <li><a class="dropdown-item" href="#">Product 04</a></li>
+                <li><a class="dropdown-item" href="#">Product 05</a></li>
+                <li><a class="dropdown-item" href="#">Product 06</a></li>
+                <li><a class="dropdown-item" href="#">Product 07</a></li>
+                <li><a class="dropdown-item" href="#">Product 08</a></li>
               </ul>
             </div>
           </div>
@@ -501,7 +464,11 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Pages</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Pages</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
@@ -519,16 +486,34 @@
 
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
-              <a href="./Aboutus.html">
-                <span class="custom-link">About us</span>
+              <a
+                href="#"
+                class="d-flex justify-content-between align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >About us</span
+                >
               </a>
             </div>
           </div>
 
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
-              <a href="./Contactus.html">
-                <span class="custom-link">Contact us </span>
+              <a
+                href="#"
+                class="d-flex justify-content-between align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Contact us
+                </span>
               </a>
             </div>
           </div>
@@ -536,9 +521,9 @@
           <div class="offcanvas-bottom">
             <nav class="bottom-nav bg-dark">
               <div class="container">
-                <div class="row">
+                <div class="row p-2">
                   <div
-                    class="col-12 d-flex flex-column flex-md-row align-items-center justify-content-center"
+                    class="col-12 mb-2 d-flex flex-column flex-md-row align-items-center justify-content-center"
                   >
                     <!-- Add d-flex flex-column for mobile -->
                     <div
