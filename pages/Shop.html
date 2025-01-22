@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/png" />
+    <link
+      rel="icon"
+      href="../assets/images/Header/favicon.ico"
+      type="image/png"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,13 +27,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/Pages/Shop.css" />
+    <link rel="stylesheet" href="../styles/Navbar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
   </head>
   <body>
-    
     <!-- /* Navbar start */ -->
-    <header class="container-fluid col-12 mt-2 navbar sticky-top" id="#navbar">
+    <header
+      class="container-fluid col-12 mt-2 navbar position-relative"
+      id="#navbar"
+    >
       <nav class="container d-flex justify-content-between" id="#navbarr">
         <div
           class="left d-flex justify-content-center align-items-center gap-4"
@@ -37,7 +45,7 @@
         >
           <!-- Desktop burger menu trigger -->
           <img
-            src="../images/Header/burger-bar.png"
+            src="../assets/images/Header/burger-bar.png"
             class="d-none d-lg-block"
             data-bs-toggle="offcanvas"
             href="#offcanvasExampleDesktop"
@@ -48,7 +56,7 @@
           />
           <!-- Mobile burger menu trigger -->
           <img
-            src="../images/Header/burger-bar.png"
+            src="../assets/images/Header/burger-bar.png"
             class="d-block d-lg-none"
             data-bs-toggle="offcanvas"
             href="#offcanvasExampleMobile"
@@ -82,7 +90,7 @@
         <div
           class="center d-flex justify-content-center align-items-center gap-4"
         >
-          <img src="../images/Header/logo.png" width="200" alt="" />
+          <img src="../assets/images/Header/logo.png" width="150" alt="" />
         </div>
 
         <div class="right d-flex align-items-center gap-4">
@@ -220,7 +228,7 @@
           <!-- Your existing desktop menu items -->
           <div class="dropdown">
             <a
-              href="#"
+              href="../index.html"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -231,12 +239,24 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li><a class="dropdown-item" href="#">Furniture 1</a></li>
-              <li><a class="dropdown-item" href="#">Furniture 2</a></li>
-              <li><a class="dropdown-item" href="#">Furniture 3</a></li>
-              <li><a class="dropdown-item" href="#">Fashion 1</a></li>
-              <li><a class="dropdown-item" href="#">Fashion 2</a></li>
-              <li><a class="dropdown-item" href="#">Fashion 3</a></li>
+              <li>
+                <a class="dropdown-item" href="../index.html">Furniture 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../index.html">Furniture 2</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../index.html">Furniture 3</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../index.html">Fashion 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../index.html">Fashion 2</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../index.html">Fashion 3</a>
+              </li>
             </ul>
           </div>
 
@@ -253,22 +273,36 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li><a class="dropdown-item" href="#">Shop Grid</a></li>
-              <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
-              <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
-              <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Shop Grid</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Scroll Sidebar</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Filter Sidebar</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Filter Dropdown</a>
+              </li>
               <li>
                 <a class="dropdown-item" href="#">Float Filter Sidebar</a>
               </li>
-              <li><a class="dropdown-item" href="#">Load More Button</a></li>
-              <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
-              <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Load More Button</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Infinity Scroll</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Ajax Pagination</a>
+              </li>
             </ul>
           </div>
 
           <div class="dropdown">
             <a
-              href="#"
+              href="./Product.html"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -280,16 +314,26 @@
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
               <li>
-                <a class="dropdown-item" href="../pages/Product1.html"
-                  >Product 01</a
-                >
+                <a class="dropdown-item" href="./Product.html">Product 01</a>
               </li>
-              <li><a class="dropdown-item" href="#">Product 02</a></li>
-              <li><a class="dropdown-item" href="#">Product 03</a></li>
-              <li><a class="dropdown-item" href="#">Product 04</a></li>
-              <li><a class="dropdown-item" href="#">Product 05</a></li>
-              <li><a class="dropdown-item" href="#">Product 06</a></li>
-              <li><a class="dropdown-item" href="#">Product 07</a></li>
+              <li>
+                <a class="dropdown-item" href="./Product.html">Product 02</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./Product.html">Product 03</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./Product.html">Product 04</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./Product.html">Product 05</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./Product.html">Product 06</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./Product.html">Product 07</a>
+              </li>
               <li><a class="dropdown-item" href="#">Product 08</a></li>
             </ul>
           </div>
@@ -318,21 +362,11 @@
             </ul>
           </div>
 
-          <a
-            href="#"
-            class="d-flex justify-content-between align-items-center"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a href="./Aboutus.html">
             <span class="custom-link">About us</span>
           </a>
 
-          <a
-            href="#"
-            class="d-flex justify-content-between align-items-center"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a href="./Contactus.html">
             <span class="custom-link">Contact us</span>
           </a>
           <!-- Repeat for other menu items -->
@@ -352,11 +386,11 @@
             class="offcanvas-title d-flex justify-content-center"
             id="offcanvasLabel"
           >
-            <img src="../images/Header/logo.png" width="60%" alt="" />
+            <img src="../assets/images/Header/logo.png" width="60%" alt="" />
           </div>
         </div>
 
-        <div class="container">
+        <div class="container px-4">
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
@@ -365,11 +399,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
-                  class="custom-link"
-                  >Home</span
-                >
+                <span class="custom-link">Home</span>
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
@@ -391,24 +421,34 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
-                  class="custom-link"
-                  >Shop</span
-                >
+                <span class="custom-link">Shop</span>
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Shop Grid</a></li>
-                <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
-                <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
-                <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Shop Grid</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Scroll Sidebar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Filter Sidebar</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Filter Dropdown</a>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#">Float Filter Sidebar</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Load More Button</a></li>
-                <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
-                <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Load More Button</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Infinity Scroll</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ajax Pagination</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -421,26 +461,34 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
-                  class="custom-link"
-                  >Product</span
-                >
+                <span class="custom-link">Product</span>
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="../pages/Product1.html"
-                    >Product 01</a
-                  >
+                  <a class="dropdown-item" href="./Product.html">Product 01</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Product 02</a></li>
-                <li><a class="dropdown-item" href="#">Product 03</a></li>
-                <li><a class="dropdown-item" href="#">Product 04</a></li>
-                <li><a class="dropdown-item" href="#">Product 05</a></li>
-                <li><a class="dropdown-item" href="#">Product 06</a></li>
-                <li><a class="dropdown-item" href="#">Product 07</a></li>
-                <li><a class="dropdown-item" href="#">Product 08</a></li>
+                <li>
+                  <a class="dropdown-item" href="./Product.html">Product 02</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Product.html">Product 03</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Product.html">Product 04</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Product.html">Product 05</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Product.html">Product 06</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Product.html">Product 07</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./Product.html">Product 08</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -453,11 +501,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
-                  class="custom-link"
-                  >Pages</span
-                >
+                <span class="custom-link">Pages</span>
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
@@ -475,34 +519,16 @@
 
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
-              <a
-                href="#"
-                class="d-flex justify-content-between align-items-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
-                  class="custom-link"
-                  >About us</span
-                >
+              <a href="./Aboutus.html">
+                <span class="custom-link">About us</span>
               </a>
             </div>
           </div>
 
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
-              <a
-                href="#"
-                class="d-flex justify-content-between align-items-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
-                  class="custom-link"
-                  >Contact us
-                </span>
+              <a href="./Contactus.html">
+                <span class="custom-link">Contact us </span>
               </a>
             </div>
           </div>
@@ -510,9 +536,9 @@
           <div class="offcanvas-bottom">
             <nav class="bottom-nav bg-dark">
               <div class="container">
-                <div class="row p-2">
+                <div class="row">
                   <div
-                    class="col-12 mb-2 d-flex flex-column flex-md-row align-items-center justify-content-center"
+                    class="col-12 d-flex flex-column flex-md-row align-items-center justify-content-center"
                   >
                     <!-- Add d-flex flex-column for mobile -->
                     <div
@@ -692,6 +718,1097 @@
       </div>
     </header>
     <!-- /* Navbar End */ -->
+
+    <div class="container">
+      <div class="product-detail-container mt-4">
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb d-flex justify-content-center text-center">
+            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item">
+              <a href="#">Shop</a>
+            </li>
+          </ol>
+        </nav>
+        <div class="title">
+          <h4 class="text-center">Shop</h4>
+        </div>
+
+        <div class="swiper mt-5 mb-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/1.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">Bed</a></h3>
+                  <p class="product-description">7 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/2.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">
+                    <a href="#">Bedroom Furniture</a>
+                  </h3>
+                  <p class="product-description">18 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/3.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#"> Cabinet</a></h3>
+                  <p class="product-description">5 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/4.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">Chair</a></h3>
+                  <p class="product-description">12 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/5.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title">
+                    <a href="#"></a>Dining & Kitchen
+                  </h3>
+                  <p class="product-description">25 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/6.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">Home Office</a></h3>
+                  <p class="product-description">23 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/7.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">Lamp</a></h3>
+                  <p class="product-description">7 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/8.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">Living Room</a></h3>
+                  <p class="product-description">24 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/9.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">New & Now</a></h3>
+                  <p class="product-description">33 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/10.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">Outdoor Lounge</a></h3>
+                  <p class="product-description">23 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/11.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">Sofa</a></h3>
+                  <p class="product-description">8 products</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="product-card">
+                <div class="img-container">
+                  <img
+                    src="../assets/images/Shop-grid/carsoul/5.jpg"
+                    alt="Product 1"
+                    class="product-image"
+                  />
+                </div>
+                <div class="product-info">
+                  <h3 class="product-title"><a href="#">Table</a></h3>
+                  <p class="product-description">5 products</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center mb-4">
+          <!-- Left side - Filter -->
+          <div class="col-md-6 d-flex align-items-center">
+            <button class="btn btn-light me-3">
+              <i class="bi bi-funnel"></i> FILTER
+            </button>
+            <!-- View toggle buttons -->
+            <div class="btn-group" role="group">
+              <button class="btn btn-light">
+                <i class="bi bi-list"></i>
+              </button>
+              <button class="btn btn-light">
+                <i class="bi bi-grid"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right side - Sort and Show only sale -->
+          <div class="col-md-6 d-flex align-items-center justify-content-end">
+            <div class="form-check me-3">
+              <input class="form-check-input" type="checkbox" id="saleOnly" />
+              <label class="form-check-label" for="saleOnly">
+                Show only products on sale
+              </label>
+            </div>
+
+            <select class="form-select" style="width: auto">
+              <option selected>Sort by latest</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Most Popular</option>
+            </select>
+          </div>
+        </div>
+
+        <main class="mt-5">
+          <div class="container">
+            <div class="row g-4">
+              <!-- Product 1 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <div class="labels">
+                      <span class="label hot">HOT</span>
+                      <span class="label SALE">SALE</span>
+                    </div>
+                    <img
+                      src="../assets/images/Shop-grid/product/1.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/1-1.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Wood Outdoor Adirondack Chair</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$1,009</span>
+                      <span class="old-price ms-2">$1,259</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <img
+                      src="../assets/images/Shop-grid/product/2.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/2-2.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Solid Wood Bar Storage Cabinet</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$1,689</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <img
+                      src="../assets/images/Shop-grid/product/3.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/3-3.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Solid Wood Bed With Fabric Headboard</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$1,707 </span>
+                      <span class="old-price ms-2">$5,707</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <div class="labels">
+                      <span class="label sold-out">SOLD OUT</span>
+                    </div>
+                    <img
+                      src="../assets/images/Shop-grid/product/4.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/4-4.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Floor Lamp With Polyester Shade</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$399</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 5 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <div class="labels">
+                      <span class="label hot">HOT</span>
+                    </div>
+                    <img
+                      src="../assets/images/Shop-grid/product/5.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/5-5.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Garden Chair With Armrests</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$1,009</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 6 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <div class="labels">
+                      <span class="label SALE">SALE</span>
+                    </div>
+                    <img
+                      src="../assets/images/Shop-grid/product/6.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/4-4.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Led Steel Floor Lamp</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$249 </span>
+                      <span class="old-price ms-2">$459</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 7 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <img
+                      src="../assets/images/Shop-grid/product/7.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/7-7.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Teak Garden Chair With Armrests</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$699</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 8 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <div class="labels">
+                      <span class="label SALE">SALE</span>
+                    </div>
+                    <img
+                      src="../assets/images/Shop-grid/product/8.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/8-8.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Rectangular Metal And Stone Table</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$1,599</span>
+                      <span class="old-price ms-2">$2,289</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 9 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <div class="labels">
+                      <span class="label hot">HOT</span>
+                      <span class="label SALE">SALE</span>
+                    </div>
+                    <img
+                      src="../assets/images/Shop-grid/product/9.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/9-9.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >2-Piece Left-Arm Sectional Sofa</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$399 </span>
+                      <span class="old-price ms-2">$1,349</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 10 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <div class="labels">
+                      <span class="label sold-out">SOLD OUT</span>
+                    </div>
+                    <img
+                      src="../assets/images/Shop-grid/product/10.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/6.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Contemporary Steel Floor Lamp</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$399</span>
+                      <span class="old-price ms-2">$499</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 11 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <div class="labels">
+                      <span class="label hot">HOT</span>
+                      <span class="label SALE">SALE</span>
+                    </div>
+                    <img
+                      src="../assets/images/Shop-grid/product/11.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/11-11.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Bar Cabinet With Integrated Lighting</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$1,499 </span>
+                      <span class="old-price ms-2">$2,789</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 12 -->
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="product">
+                  <div class="image-container">
+                    <img
+                      src="../assets/images/Shop-grid/product/12.jpg"
+                      class="image-default"
+                      alt="Wood Outdoor Chair Default View"
+                    />
+                    <img
+                      src="../assets/images/Shop-grid/product/12-12.jpg"
+                      class="image-hover"
+                      alt="Wood Outdoor Chair Hover View"
+                    />
+                    <div class="icon-container">
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Wishlist"
+                      >
+                        <i class="fa-regular fa-heart"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Quick View"
+                      >
+                        <i class="fas fa-search"></i>
+                      </a>
+                      <a
+                        href="#"
+                        class="icon-link"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="left"
+                        title="Compare"
+                      >
+                        <i class="fa-solid fa-code-compare"></i>
+                      </a>
+                    </div>
+                    <a href="#" class="hover-link">View Product</a>
+                  </div>
+                  <div class="product-info mt-3">
+                    <a href="#" class="product-title"
+                      >Rectangular Wooden Garden Table</a
+                    >
+                    <div class="price">
+                      <span class="current-price">$2,989</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <nav
+              class="mt-5 d-flex justify-content-center"
+              aria-label="Page navigation"
+            >
+              <ul class="pagination">
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="footer-area py-5">
+      <div class="container">
+        <div class="row mt-4 border-top py-5">
+          <!-- Logo & Contact Section -->
+          <div
+            class="col-12 col-lg-3 col-md-12 mb-4 mb-lg-0 LogoContactSection"
+          >
+            <div class="footer-logo mb-3">
+              <img
+                src="../assets/images/Footer/logo.png"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="footer-contact">
+              <p>Text: +00(234)23-45-666</p>
+              <p>Mon – Fri: 8 am – 8 pm</p>
+              <p>Sat – Sun: 8 am – 7 pm</p>
+            </div>
+          </div>
+
+          <!-- Middle Sections Wrapper -->
+          <div class="mid-section d-flex col-lg-5 col-md-12">
+            <!-- About Section -->
+            <div class="col-lg-3 col-md-3">
+              <h6 class="footer-title">ABOUT</h6>
+              <ul class="footer-links">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Influencers</a></li>
+                <li><a href="#">Join our team</a></li>
+              </ul>
+            </div>
+
+            <!-- Customer Services Section -->
+            <div class="col-lg-5 col-md-5">
+              <h6 class="footer-title">CUSTOMER SERVICES</h6>
+              <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Find Store</a></li>
+                <li><a href="#">Book appointment</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div class="col-lg-4 col-md-7">
+            <h6 class="footer-title">SIGN UP FOR EMAILS</h6>
+            <p class="newsletter-text">
+              Enjoy 15% off* your first order when sign up to our newsletter
+            </p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your e-mail address"
+                  required
+                />
+                <button class="btn btn-subscribe" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <div class="social-icons mt-4">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row border-top pt-4">
+          <div class="col-md-4 col-12 order-2 order-md-1">
+            <ul class="footer-bottom-links d-flex  justify-content-center">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12 text-center order-1 order-md-2 ">
+            <p class="copyright">© Nooni. All Rights Reserved.</p>
+          </div>
+          <div
+            class="col-md-4 text-center text-lg-end mt-lg-0 mt-3 payment-methodss order-3"
+          >
+            <img
+              src="../assets/images/Footer/payment.png"
+              alt="Payment Methods"
+              class="img-fluid payment-methods"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -702,6 +1819,7 @@
       new WOW().init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/Navbar.js"></script>
     <script src="../js/pages/Shop.js"></script>
   </body>
 </html>

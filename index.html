@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nooni – Elementor WooCommerce</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/png" />
+    <link rel="icon" href="./assets/images/Header/favicon.ico" type="image/png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,16 +25,20 @@
     />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/Navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
   </head>
   <body>
-    <header class="container-fluid col-12 p-3 navbar sticky-top">
-      <nav class="container d-flex justify-content-between">
+    <header class="container-fluid col-12 mt-2 navbar sticky-top" id="#navbar">
+      <nav class="container d-flex justify-content-between" id="#navbarr">
         <div
           class="left d-flex justify-content-center align-items-center gap-4"
+          id="#navbar"
         >
-          <!-- Desktop burger menu -->
+          <!-- Desktop burger menu trigger -->
           <img
-          src="./assets/images/Header/burger-bar.png"
+            src="./assets/images/Header/burger-bar.png"
             class="d-none d-lg-block"
             data-bs-toggle="offcanvas"
             href="#offcanvasExampleDesktop"
@@ -43,7 +47,7 @@
             width="25"
             alt="Menu"
           />
-          <!-- Mobile burger menu  -->
+          <!-- Mobile burger menu trigger -->
           <img
           src="./assets/images/Header/burger-bar.png"
             class="d-block d-lg-none"
@@ -79,7 +83,7 @@
         <div
           class="center d-flex justify-content-center align-items-center gap-4"
         >
-          <img src="./assets/images/Header/logo.png" width="200" alt="logo" />
+          <img src="./assets/images/Header/logo.png" width="200" alt="" />
         </div>
 
         <div class="right d-flex align-items-center gap-4">
@@ -214,6 +218,7 @@
         </div>
 
         <nav class="d-flex flex-column col-10 gap-4 p-3">
+          <!-- Your existing desktop menu items -->
           <div class="dropdown">
             <a
               href="#"
@@ -238,7 +243,7 @@
 
           <div class="dropdown">
             <a
-              href="#"
+              href="./pages/Shop.html""
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -249,22 +254,22 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li><a class="dropdown-item" href="#">Shop Grid</a></li>
-              <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
-              <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
-              <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
+              <li><a class="dropdown-item" href="./pages/Shop.html">Shop Grid</a></li>
+              <li><a class="dropdown-item" href="./pages/Shop.html">Scroll Sidebar</a></li>
+              <li><a class="dropdown-item" href="./pages/Shop.html">Filter Sidebar</a></li>
+              <li><a class="dropdown-item" href="./pages/Shop.html">Filter Dropdown</a></li>
               <li>
-                <a class="dropdown-item" href="#">Float Filter Sidebar</a>
+                <a class="dropdown-item" href="./pages/Shop.html">Float Filter Sidebar</a>
               </li>
-              <li><a class="dropdown-item" href="#">Load More Button</a></li>
-              <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
-              <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
+              <li><a class="dropdown-item" href="./pages/Shop.html">Load More Button</a></li>
+              <li><a class="dropdown-item" href="./pages/Shop.html">Infinity Scroll</a></li>
+              <li><a class="dropdown-item" href="./pages/Shop.html">Ajax Pagination</a></li>
             </ul>
           </div>
 
           <div class="dropdown">
             <a
-              href="#"
+              href="./pages/Product.html"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -275,13 +280,17 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li><a class="dropdown-item" href="#">Product 01</a></li>
-              <li><a class="dropdown-item" href="#">Product 02</a></li>
-              <li><a class="dropdown-item" href="#">Product 03</a></li>
-              <li><a class="dropdown-item" href="#">Product 04</a></li>
-              <li><a class="dropdown-item" href="#">Product 05</a></li>
-              <li><a class="dropdown-item" href="#">Product 06</a></li>
-              <li><a class="dropdown-item" href="#">Product 07</a></li>
+              <li>
+                <a class="dropdown-item" href="./pages/Product.html"
+                  >Product 01</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="./pages/Product.html">Product 02</a></li>
+              <li><a class="dropdown-item" href="./pages/Product.html">Product 03</a></li>
+              <li><a class="dropdown-item" href="./pages/Product.html">Product 04</a></li>
+              <li><a class="dropdown-item" href="./pages/Product.html">Product 05</a></li>
+              <li><a class="dropdown-item" href="./pages/Product.html">Product 06</a></li>
+              <li><a class="dropdown-item" href="./pages/Product.html">Product 07</a></li>
               <li><a class="dropdown-item" href="#">Product 08</a></li>
             </ul>
           </div>
@@ -311,22 +320,17 @@
           </div>
 
           <a
-            href="#"
-            class="d-flex justify-content-between align-items-center"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+          href="./pages/Aboutus.html"
           >
             <span class="custom-link">About us</span>
           </a>
 
           <a
-            href="#"
-            class="d-flex justify-content-between align-items-center"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
+            href="./pages/Contactus.html"
           >
             <span class="custom-link">Contact us</span>
           </a>
+          <!-- Repeat for other menu items -->
         </nav>
       </div>
 
@@ -336,19 +340,19 @@
         tabindex="-1"
         id="offcanvasExampleMobile"
         aria-labelledby="offcanvasExampleLabel"
-
+        style="width: 50%"
       >
         <div class="offcanvas-header p-5">
           <div
             class="offcanvas-title d-flex justify-content-center"
             id="offcanvasLabel"
           >
-            <img src="./assets/images/Header/burger-bar.png"  width="60%" alt="" />
+            <img src="./assets/images/Header/logo.png" width="60%" alt="" />
           </div>
         </div>
 
-        <div class="container">
-          <div class="row col-12 mb-3">
+        <div class="container px-4">
+          <div class="row col-12 mb-3 ">
             <div class="dropdown custom-dropdown">
               <a
                 href="#"
@@ -357,7 +361,6 @@
                 aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Home</span
                 >
@@ -377,29 +380,28 @@
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
-                href="#"
+                href="./pages/Shop.html"
                 class="d-flex justify-content-between align-items-center"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Shop</span
                 >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Shop Grid</a></li>
-                <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
-                <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
-                <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
+                <li><a class="dropdown-item" href="./pages/Shop.html">Shop Grid</a></li>
+                <li><a class="dropdown-item" href="./pages/Shop.html">Scroll Sidebar</a></li>
+                <li><a class="dropdown-item" href="./pages/Shop.html">Filter Sidebar</a></li>
+                <li><a class="dropdown-item" href="./pages/Shop.html">Filter Dropdown</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Float Filter Sidebar</a>
+                  <a class="dropdown-item" href="./pages/Shop.html">Float Filter Sidebar</a>
                 </li>
-                <li><a class="dropdown-item" href="#">Load More Button</a></li>
-                <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
-                <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
+                <li><a class="dropdown-item" href="./pages/Shop.html">Load More Button</a></li>
+                <li><a class="dropdown-item" href="./pages/Shop.html">Infinity Scroll</a></li>
+                <li><a class="dropdown-item" href="./pages/Shop.html">Ajax Pagination</a></li>
               </ul>
             </div>
           </div>
@@ -407,27 +409,30 @@
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
-                href="#"
+                href="./pages/Product.html"
                 class="d-flex justify-content-between align-items-center"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Product</span
                 >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Product 01</a></li>
-                <li><a class="dropdown-item" href="#">Product 02</a></li>
-                <li><a class="dropdown-item" href="#">Product 03</a></li>
-                <li><a class="dropdown-item" href="#">Product 04</a></li>
-                <li><a class="dropdown-item" href="#">Product 05</a></li>
-                <li><a class="dropdown-item" href="#">Product 06</a></li>
-                <li><a class="dropdown-item" href="#">Product 07</a></li>
-                <li><a class="dropdown-item" href="#">Product 08</a></li>
+                <li>
+                  <a class="dropdown-item" href="./pages/Product.html"
+                    >Product 01</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="./pages/Product.html">Product 02</a></li>
+                <li><a class="dropdown-item" href="./pages/Product.html">Product 03</a></li>
+                <li><a class="dropdown-item" href="./pages/Product.html">Product 04</a></li>
+                <li><a class="dropdown-item" href="./pages/Product.html">Product 05</a></li>
+                <li><a class="dropdown-item" href="./pages/Product.html">Product 06</a></li>
+                <li><a class="dropdown-item" href="./pages/Product.html">Product 07</a></li>
+                <li><a class="dropdown-item" href="./pages/Product.html">Product 08</a></li>
               </ul>
             </div>
           </div>
@@ -441,7 +446,6 @@
                 aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Pages</span
                 >
@@ -463,13 +467,9 @@
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
-                href="#"
-                class="d-flex justify-content-between align-items-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              href="./pages/Aboutus.html"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >About us</span
                 >
@@ -480,13 +480,9 @@
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
-                href="#"
-                class="d-flex justify-content-between align-items-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              href="./pages/Contactus.html"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Contact us
                 </span>
@@ -497,10 +493,11 @@
           <div class="offcanvas-bottom">
             <nav class="bottom-nav bg-dark">
               <div class="container">
-                <div class="row p-2">
+                <div class="row">
                   <div
-                    class="col-12 mb-2 d-flex flex-column flex-md-row align-items-center justify-content-center"
+                    class="col-12  d-flex flex-column flex-md-row align-items-center justify-content-center"
                   >
+                    <!-- Add d-flex flex-column for mobile -->
                     <div
                       class="language-currency-buttons d-flex flex-column flex-md-row gap-2"
                     >
@@ -678,76 +675,873 @@
       </div>
     </header>
 
-
-
     <div class="container-fluid section-crousaol">
-      <div class="container  ">
-      <div id="carouselExampleIndicators" class="carousel slide d-flex" data-bs-ride="carousel">
-  
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide d-flex"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" style="border: 3px solid rgb(0, 0, 0);" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="border: 3px solid black;" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="border: 3px solid black;" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              style="border: 3px solid rgb(0, 0, 0)"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              style="border: 3px solid black"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              style="border: 3px solid black"
+              aria-label="Slide 3"
+            ></button>
           </div>
-          
+
           <div class="carousel-inner d-flex align-items-center mt-5">
-  
-              <div class="carousel-item active ">
-                  <div class="carousel-content">
-                      <div class="carousel-text">
-                          <h2>NEW ARRIVALS</h2>
-                          <h1>Chairs & Seating You'll Love</h1>
-                          <p>Designer chair styles for every space - <span>Free Shipping</span></p>
-                          <a href="#" class="text-black">SHOP NOW</a> </div>
-                      <div class="carousel-image">
-                          <img src="./assets/images/Home/Banner/slide-1-home1-2.png" alt="Slide 1">
-                      </div>
-                  </div>
+            <div class="carousel-item active">
+              <div class="carousel-content">
+                <div class="carousel-text">
+                  <h2>NEW ARRIVALS</h2>
+                  <h1>Chairs & Seating You'll Love</h1>
+                  <p>
+                    Designer chair styles for every space -
+                    <span>Free Shipping</span>
+                  </p>
+                  <a href="#" class="text-black">SHOP NOW</a>
+                </div>
+                <div class="carousel-image">
+                  <img
+                    src="./assets/images/Home/Banner/slide-1-home1-2.png"
+                    alt="Slide 1"
+                  />
+                </div>
               </div>
-  
-  
-              <div class="carousel-item">
-                  <div class="carousel-content">
-                      <div class="carousel-text">
-                          <h2>NEW ARRIVALS</h2>
-                          <h1>Chairs & Seating You'll Love</h1>
-                          <p>Designer chair styles for every space - <span>Free Shipping</span></p>
-                          <a href="#" class="text-black">SHOP NOW</a>  </div>
-                      <div class="carousel-image">
-                        <img src="./assets/images/Home/Banner/slide-2-home1-1.png" alt="Slide 1">
-                      </div>
-                  </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-content">
+                <div class="carousel-text">
+                  <h2>NEW ARRIVALS</h2>
+                  <h1>Chairs & Seating You'll Love</h1>
+                  <p>
+                    Designer chair styles for every space -
+                    <span>Free Shipping</span>
+                  </p>
+                  <a href="#" class="text-black">SHOP NOW</a>
+                </div>
+                <div class="carousel-image">
+                  <img
+                    src="./assets/images/Home/Banner/slide-2-home1-1.png"
+                    alt="Slide 1"
+                  />
+                </div>
               </div>
-  
-  
-              <div class="carousel-item">
-                  <div class="carousel-content">
-                      <div class="carousel-text">
-                          <h2>NEW ARRIVALS</h2>
-                          <h1>Chairs & Seating You'll Love</h1>
-                          <p>Designer chair styles for every space - <span>Free Shipping</span></p>
-                          <a href="#" class="text-black">SHOP NOW</a> </div>
-                      <div class="carousel-image">
-                        <img src="./assets/images/Home/Banner/slide-3-home1-1.png" alt="Slide 1">
-                      </div>
-                  </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel-content">
+                <div class="carousel-text">
+                  <h2>NEW ARRIVALS</h2>
+                  <h1>Chairs & Seating You'll Love</h1>
+                  <p>
+                    Designer chair styles for every space -
+                    <span>Free Shipping</span>
+                  </p>
+                  <a href="#" class="text-black">SHOP NOW</a>
+                </div>
+                <div class="carousel-image">
+                  <img
+                    src="./assets/images/Home/Banner/slide-3-home1-1.png"
+                    alt="Slide 1"
+                  />
+                </div>
               </div>
-  
-  
+            </div>
           </div>
+        </div>
       </div>
+    </div>
+
+
+        <!-- /* Category Start */ -->
+
+        <div class="container mt-5">
+          <div class="title-section">
+            <h2>SHOP BY CATEGORY</h2>
+          </div>
+          <div class="swiper product-swiper">
+            <div class="swiper-wrapper">
+              <!-- Product 1 -->
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="img-container">
+                    <img
+                      src="./assets/images/Home/Category/bed.jpg"
+                      alt="Product 1"
+                      class="product-image"
+                    />
+                    <div class="overlay">
+                      <i class="fas fa-link link-icon"></i>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h2 class="product-title"><a href="">Bed</a></h2>
+                    <p class="product-description">7 Product</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="img-container">
+                    <img
+                    src="./assets/images/Home/Category/lamp-1.jpg"
+                      alt="Product 1"
+                      class="product-image"
+                    />
+                    <div class="overlay">
+                      <i class="fas fa-link link-icon"></i>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h2 class="product-title"><a href="">Lamp</a></h2>
+                    <p class="product-description">7 Product</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="img-container">
+                    <img
+                    src="./assets/images/Home/Category/chair-1.jpg"
+                      alt="Product 1"
+                      class="product-image"
+                    />
+                    <div class="overlay">
+                      <i class="fas fa-link link-icon"></i>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h2 class="product-title"><a href="">Chair</a></h2>
+                    <p class="product-description">12 Product</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="img-container">
+                    <img
+                    src="./assets/images/Home/Category/table.jpg"
+                      alt="Product 1"
+                      class="product-image"
+                    />
+                    <div class="overlay">
+                      <i class="fas fa-link link-icon"></i>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h2 class="product-title"><a href="">Table</a></h2>
+                    <p class="product-description">5 Product</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-card">
+                  <div class="img-container">
+                    <img
+                    src="./assets/images/Home/Category/chair-1.jpg"
+                      alt="Product 1"
+                      class="product-image"
+                    />
+                    <div class="overlay">
+                      <i class="fas fa-link link-icon"></i>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h2 class="product-title"><a href="">Chair</a></h2>
+                    <p class="product-description">12 Product</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- /* Category End */ -->
+
+
+
+        
+    <!-- /* Offer Start */ -->
+
+    <div class="container mt-5">
+      <div class="row g-4">
+        <!-- Left Column -->
+        <div class="col-12 col-lg-6">
+          <div class="row g-4">
+            <!-- Lamp Section -->
+            <div class="col-12">
+              <div class="section lamp-section">
+                <div class="content">
+                  <h4 class="offer-title">Up To 40% Off</h4>
+                  <h4 class="offer-title">Top Lamp Brands</h4>
+                  <a
+                    href="#"
+                    class="shop-now text-decoration-underline text-dark fw-bold"
+                    >SHOP NOW</a
+                  >
+                </div>
+                <img
+                  src="./assets/images/Home/Offer/banner-0.jpg"
+                  alt="Desk Lamp"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <!-- Cabinet Section -->
+            <div class="col-12">
+              <div class="section cabinet-section">
+                <div class="content">
+                  <div class="tag">NEW PRODUCTS</div>
+                  <h4>Up To 25% Off Cabinets</h4>
+                  <a
+                    href="#"
+                    class="shop-now text-decoration-underline text-dark fw-bold"
+                    >SHOP NOW</a
+                  >
+                </div>
+                <img
+                src="./assets/images/Home/Offer/banner-1.jpg"
+                  alt="Cabinet"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-12 col-lg-6">
+          <div class="section furniture-section h-100 position-relative">
+            <img
+            src="./assets/images/Home/Offer/banner-2.jpg"
+              alt="Wooden Stool"
+              class="img-fluid w-100 h-100"
+            />
+            <div class="content-furniture">
+              <p class="tag text-white">BIG SALE</p>
+              <h4>Up to 70% Off</h4>
+              <h4>Furniture & Decor</h4>
+              <a
+                href="#"
+                class="shop-now text-decoration-underline text-white fw-bold"
+                >SHOP NOW</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Promo Section -->
+        <div class="col-12 mt-4">
+          <div class="section promo position-relative">
+            <img
+            src="./assets/images/Home/Offer/banner-3.jpg"
+              class="img-fluid"
+              alt="Promo Banner"
+            />
+            <div class="promo-content">
+              <h2>10%</h2>
+              <div class="caption-promo">
+                <p>Get More Pay Less</p>
+                <p>
+                  On orders $500 Use Coupon Code:
+                  <span class="fw-bolder">WSD10</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    </div>
+    <!-- /* Offer End */ -->
+
+
+
+    <!-- /* Cards Start */ -->
+    <div class="container mt-5">
+      <div class="row g-4">
+        <!-- Title Section  -->
+        <div class="col-12 col-lg-3">
+          <div class="title-section text-center text-lg-start">
+            <div>
+              <h2 class="mb-2 mb-lg-3">Best Modern Furniture</h2>
+              <a href="#" class="see-all d-none d-lg-block"> See All >> </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product  -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product">
+            <div class="image-container">
+              <div class="labels">
+                <span class="label hot">HOT</span>
+                <span class="label sold">SOLD</span>
+              </div>
+              <img
+                src="./assets/images/Home/Product/Product 1.jpg"
+                class="image-default"
+              />
+              <img
+                src="./assets/images/Home/Product/hover-Product 1.jpg"
+                class="image-hover"
+              />
+              <div class="icon-container">
+                <a href="#" class="icon-link" data-tooltip="Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Quick View">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Compare">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <a href="#" class="hover-link">View Product</a>
+            </div>
+            <div class="product-info mt-3">
+              <a href="#" class="product-title"
+                ><h6>Wood Outdoor Adirondack Chair</h6> </a
+              >
+              <div class="price">
+                <span class="current-price">$1,009</span>
+                <span class="old-price ms-2">$1,259</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product">
+            <div class="image-container">
+              <img
+                src="./assets/images/Home/Product/Product 2.jpg"
+                class="image-default"
+              />
+              <img
+                src="./assets/images/Home/Product/hover-Product 2.jpg"
+                class="image-hover"
+              />
+              <div class="icon-container">
+                <a href="#" class="icon-link" data-tooltip="Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Quick View">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Compare">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <a href="#" class="hover-link">View Product</a>
+            </div>
+            <div class="product-info mt-3">
+              <a href="#" class="product-title"
+                ><h6>Wood Outdoor Adirondack Chair</h6> </a
+              >
+              <div class="price">
+                <span class="current-price">$1,009</span>
+                <span class="old-price ms-2">$1,259</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product">
+            <div class="image-container">
+              <img
+                src="./assets/images/Home/Product/Product 3.jpg"
+                class="image-default"
+              />
+              <img
+                src="./assets/images/Home/Product/hover-Product 3.jpg"
+                class="image-hover"
+              />
+              <div class="icon-container">
+                <a href="#" class="icon-link" data-tooltip="Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Quick View">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Compare">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <a href="#" class="hover-link">View Product</a>
+            </div>
+            <div class="product-info mt-3">
+              <a href="#" class="product-title"
+                ><h6>Wood Outdoor Adirondack Chair</h6> </a
+              >
+              <div class="price">
+                <span class="current-price">$1,009</span>
+                <span class="old-price ms-2">$1,259</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product">
+            <div class="image-container">
+              <div class="labels">
+                <span class="label sold">SOLD OUt</span>
+              </div>
+              <img
+                src="./assets/images/Home/Product/Product 4.jpg"
+                class="image-default"
+              />
+              <img
+                src="./assets/images/Home/Product/hover-Product 4.jpg"
+                class="image-hover"
+              />
+              <div class="icon-container">
+                <a href="#" class="icon-link" data-tooltip="Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Quick View">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Compare">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <a href="#" class="hover-link">View Product</a>
+            </div>
+            <div class="product-info mt-3">
+              <a href="#" class="product-title"
+                ><h6>Wood Outdoor Adirondack Chair</h6> </a
+              >
+              <div class="price">
+                <span class="current-price">$1,009</span>
+                <span class="old-price ms-2">$1,259</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product">
+            <div class="image-container">
+              <div class="labels">
+                <span class="label hot">HOT</span>
+              </div>
+              <img
+                src="./assets/images/Home/Product/Product 5.jpg"
+                class="image-default"
+              />
+              <img
+                src="./assets/images/Home/Product/hover-Product 5.jpg"
+                class="image-hover"
+              />
+              <div class="icon-container">
+                <a href="#" class="icon-link" data-tooltip="Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Quick View">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Compare">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <a href="#" class="hover-link">View Product</a>
+            </div>
+            <div class="product-info mt-3">
+              <a href="#" class="product-title"
+                ><h6>Wood Outdoor Adirondack Chair</h6> </a
+              >
+              <div class="price">
+                <span class="current-price">$1,009</span>
+                <span class="old-price ms-2">$1,259</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product">
+            <div class="image-container">
+              <div class="labels">
+                <span class="label sold bg-black">SOLD</span>
+              </div>
+              <img
+                src="./assets/images/Home/Product/Product 6.jpg"
+                class="image-default"
+              />
+              <img
+                src="./assets/images/Home/Product/hover-Product 6.jpg"
+                class="image-hover"
+              />
+              <div class="icon-container">
+                <a href="#" class="icon-link" data-tooltip="Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Quick View">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Compare">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <a href="#" class="hover-link">View Product</a>
+            </div>
+            <div class="product-info mt-3">
+              <a href="#" class="product-title"
+                ><h6>Wood Outdoor Adirondack Chair</h6> </a
+              >
+              <div class="price">
+                <span class="current-price">$1,009</span>
+                <span class="old-price ms-2">$1,259</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product">
+            <div class="image-container">
+              <img
+                src="./assets/images/Home/Product/Product 7.jpg"
+                class="image-default"
+              />
+              <img
+                src="./assets/images/Home/Product/hover-Product 7.jpg"
+                class="image-hover"
+              />
+              <div class="icon-container">
+                <a href="#" class="icon-link" data-tooltip="Wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Quick View">
+                  <i class="fas fa-search"></i>
+                </a>
+                <a href="#" class="icon-link" data-tooltip="Compare">
+                  <i class="fa-solid fa-code-compare"></i>
+                </a>
+              </div>
+              <a href="#" class="hover-link">View Product</a>
+            </div>
+            <div class="product-info mt-3">
+              <a href="#" class="product-title"
+                ><h6>Wood Outdoor Adirondack Chair</h6> </a
+              >
+              <div class="price">
+                <span class="current-price">$1,009</span>
+                <span class="old-price ms-2">$1,259</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /* Cards Start */ -->
+
+
+
+
+
+    <!-- /* Blog Start */ -->
+
+    <div class="container mt-5">
+      <h5>OUR BLOG</h5>
+      <div class="swiper blog-swiper">
+        <div class="swiper-wrapper">
+          <!-- First Slide -->
+          <div class="swiper-slide">
+            <div class="blog-post d-flex">
+              <div
+                class="blog-post-inner d-flex flex-column flex-lg-row align-items-center gap-5"
+              >
+                <div class="image-containerr position-relative">
+                  <img
+                    src="./assets/images/Home/Blog/blog-1-1174x862.jpg"
+                    class="img-fluid h-100 w-100"
+                    alt="Living Room"
+                  />
+                  <div
+                    class="tags-blog d-flex justify-content-between flex-column align-content-between h-100 position-absolute top-0 p-4"
+                  >
+                    <div class="tags-blog-date bg-white text-center">
+                      <span class="date">APR 10, 2024</span>
+                    </div>
+                    <div class="tags-blog-profile bottom-0">
+                      <a href=""
+                        ><img
+                          src="./assets/images/Home/Blog/profile.jpeg"
+                          class="img-fluid w-25 rounded-5"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-lg-5 col-md-12 content-container d-flex flex-column gap-1 py-3"
+                >
+                  <div class="tags">
+                    <span>FURNITURE</span>, <span>TABLE</span>
+                  </div>
+                  <h2>The Secrets to a Living Room that Draws You In</h2>
+                  <p>
+                    Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim
+                    felis. Nam nec diam ultricies, malesuada
+                  </p>
+                  <a href="">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Slide -->
+          <div class="swiper-slide">
+            <div class="blog-post">
+              <div
+                class="blog-post-inner d-flex flex-column flex-lg-row align-items-center gap-5"
+              >
+                <div class="image-containerr position-relative">
+                  <img
+                    src="./assets/images/Home/Blog/blog-2-1174x862.jpg"
+                    class="img-fluid h-100 w-100"
+                    alt="Living Room"
+                  />
+                  <div
+                    class="tags-blog d-flex justify-content-between flex-column align-content-between h-100 position-absolute top-0 p-4"
+                  >
+                    <div class="tags-blog-date bg-white text-center">
+                      <span class="date">APR 10, 2024</span>
+                    </div>
+                    <div class="tags-blog-profile bottom-0">
+                      <a href=""
+                        ><img
+                          src="./assets/images/Home/Blog/profile.jpeg"
+                          class="img-fluid w-25 rounded-5"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-12 col-lg-5 col-md-12 content-container d-flex flex-column gap-1 py-3"
+                >
+                  <div class="tags">
+                    <span>FURNITURE</span>, <span>TABLE</span>
+                  </div>
+                  <h2>The Secrets to a Living Room that Draws You In</h2>
+                  <p>
+                    Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim
+                    felis. Nam nec diam ultricies, malesuada
+                  </p>
+                  <a href="">READ MORE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- /* Blog End */ -->
+
+
+
+
+    <!-- /* Wood-video Start */ -->
+    <div class="mt-5">
+      <div class="video-background">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          class="background-video"
+        >
+          <source
+            src="./assets/images/Home/Wood-video/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="./assets/images/Home/Wood-video/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"
+            type="video/webm"
+          />
+        </video>
+        <div class="Wood-overlay">
+          <h1>Wood</h1>
+        </div>
+      </div>
+    </div>
+    <!-- /* Wood-video End*/ -->
+
+
+
+
+
+
+
+
+
+    <footer class="footer-area py-5">
+      <div class="container">
+        <div class="row mt-4 border-top py-5">
+          <!-- Logo & Contact Section -->
+          <div
+            class="col-12 col-lg-3 col-md-12 mb-4 mb-lg-0 LogoContactSection"
+          >
+            <div class="footer-logo mb-3">
+              <img
+              src="./assets/images/Footer/logo.png"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="footer-contact">
+              <p>Text: +00(234)23-45-666</p>
+              <p>Mon – Fri: 8 am – 8 pm</p>
+              <p>Sat – Sun: 8 am – 7 pm</p>
+            </div>
+          </div>
+
+          <!-- Middle Sections Wrapper -->
+          <div class="mid-section d-flex col-lg-5 col-md-12">
+            <!-- About Section -->
+            <div class="col-lg-6 col-md-6">
+              <h6 class="footer-title">ABOUT</h6>
+              <ul class="footer-links">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Influencers</a></li>
+                <li><a href="#">Join our team</a></li>
+              </ul>
+            </div>
+
+            <!-- Customer Services Section -->
+            <div class="col-lg-6 col-md-6">
+              <h6 class="footer-title">CUSTOMER SERVICES</h6>
+              <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Find Store</a></li>
+                <li><a href="#">Book appointment</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div class="col-lg-4 col-md-6">
+            <h6 class="footer-title">SIGN UP FOR EMAILS</h6>
+            <p class="newsletter-text">
+              Enjoy 15% off* your first order when sign up to our newsletter
+            </p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your e-mail address"
+                  required
+                />
+                <button class="btn btn-subscribe" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <div class="social-icons mt-4">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row border-top pt-4">
+          <div class="col-md-4 col-12 order-2 order-md-1">
+            <ul class="footer-bottom-links d-flex  justify-content-center">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12 text-center order-1 order-md-2 ">
+            <p class="copyright">© Nooni. All Rights Reserved.</p>
+          </div>
+          <div
+            class="col-md-4 text-center text-lg-end mt-lg-0 mt-3 payment-methodss order-3"
+          >
+            <img
+              src="./assets/images/Footer/payment.png"
+              alt="Payment Methods"
+              class="img-fluid payment-methods"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/Navbar.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

@@ -1,24 +1,31 @@
-window.addEventListener("scroll", function () {
-    const navbar = document.querySelector("nav");
+const swiper = new Swiper(".swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 30,
+  loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+});
 
-    if (window.scrollY >= 500) {
-      navbar.classList.add("scrolled");
-      navbar.classList.remove("container");
-      navbar.classList.add("container-fluid");
-      navbarr.classList.add("container");
-    } else {
-      navbar.classList.remove("scrolled");
-      navbar.classList.remove("container-fluid");
-      navbar.classList.add("container");
-    }
-  });
-
-  window.addEventListener("scroll", function () {
-    const navbarr = document.querySelector("nav");
-
-    if (window.scrollY >= 500) {
-      navbarr.classList.add("px-5");
-    } else {
-      navbarr.classList.remove("px-0");
-    }
-  });
+// Initialize all tooltips
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
