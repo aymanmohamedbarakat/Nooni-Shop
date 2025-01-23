@@ -1,24 +1,42 @@
-window.addEventListener("scroll", function () {
-    const navbar = document.querySelector("nav");
 
-    if (window.scrollY >= 500) {
-      navbar.classList.add("scrolled");
-      navbar.classList.remove("container");
-      navbar.classList.add("container-fluid");
-      navbarr.classList.add("container");
-    } else {
-      navbar.classList.remove("scrolled");
-      navbar.classList.remove("container-fluid");
-      navbar.classList.add("container");
-    }
-  });
+const quantitySpan = document.querySelector(".quantity span");
 
-  window.addEventListener("scroll", function () {
-    const navbarr = document.querySelector("nav");
+function quantityMinus() {
+  let currentValue = +quantitySpan.textContent;
+  if (currentValue > 1) {
+    quantitySpan.textContent = currentValue - 1;
+  }
+}
 
-    if (window.scrollY >= 500) {
-      navbarr.classList.add("px-5");
-    } else {
-      navbarr.classList.remove("px-0");
-    }
-  });
+function quantityPlus() {
+  let currentValue = +quantitySpan.textContent;
+  quantitySpan.textContent = currentValue + 1;
+}
+
+
+
+const swiper = new Swiper(".related-products-swiper", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  speed: 800,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+});

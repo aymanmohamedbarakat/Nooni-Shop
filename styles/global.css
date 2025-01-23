@@ -65,24 +65,6 @@ h6 {
   font-size: clamp(.5rem, 2.5vw, 1rem); 
 }
 
-/* Paragraph Styles 
-p {
-  font-family: 'Inter', sans-serif;
-  color: #000000;
-  font-size: clamp(14px, 4vw, 16px);
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  font-weight: 400;
-}
-
-/* Span Styles 
-span {
-  font-family: 'Inter', sans-serif;
-  color: #000000;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: 400;
-}
 
 /* Link Styles*/ 
 a {
@@ -95,7 +77,7 @@ a:hover {
   color: #d10202;
 }
 
-/* Label Styles 
+/* Label Styles */
 .label {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
@@ -106,12 +88,12 @@ a:hover {
   display: inline-block;
 }
 
-.label.hot {
+.label .hot {
   background-color: #d10202;
   color: #ffffff;
 }
 
-.label.sold {
+.label .sold {
   background-color: #808080;
   color: #ffffff;
 }

@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="icon"
-      href="../assets/images/Header/favicon.ico"
-      type="image/png"
-    />
+    <title>Shop – Nooni</title>
+    <link rel="icon" href="../assets/images/Header/favicon.ico" type="image/png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,160 +30,40 @@
   </head>
   <body>
     <!-- /* Navbar start */ -->
-    <header
-      class="container-fluid col-12 mt-2 navbar position-relative"
-      id="#navbar"
-    >
-    <nav class="container d-flex justify-content-between" id="#navbarr">
-      <div class="row w-100 align-items-center">
-              <div
-              class="left col-4 col-md-3 col-lg-4 d-flex justify-content-start align-items-center gap-4"
-        id="#navbar"
-      >
-        <!-- Desktop burger menu trigger -->
-        <img
-          src="../assets/images/Header/burger-bar.png"
-          class="d-none d-lg-block"
-          data-bs-toggle="offcanvas"
-          href="#offcanvasExampleDesktop"
-          role="button"
-          aria-controls="offcanvasExampleDesktop"
-          width="25"
-          alt="Menu"
-        />
-        <!-- Mobile burger menu trigger -->
-        <img
-          src="../assets/images/Header/burger-bar.png"
-          class="d-block d-lg-none"
-          data-bs-toggle="offcanvas"
-          href="#offcanvasExampleMobile"
-          role="button"
-          aria-controls="offcanvasExampleMobile"
-          width="25"
-          alt="Menu"
-        />
-
-        <div
-          class="search-icon"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#searchOffcanvas"
-          role="button"
+    <header class="container-fluid col-12 mt-2 navbar position-relative" id="#navbar">
+      <nav class="container d-flex justify-content-between" id="#navbarr">
+        <div class="row w-100 align-items-center">
+                <div
+                class="left col-4 col-md-3 col-lg-4 d-flex justify-content-start align-items-center gap-4"
+          id="#navbar"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            class="bi bi-search"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-            />
-          </svg>
-        </div>
-      </div>
-
-      <div
-      class="center col-4 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
-      >
-        <img src="../assets/images/Header/logo.png" width="200" class="img-fluid" alt="" />
-      </div>
-
-      <div class="right col-4 col-md-3 col-lg-4 d-flex justify-content-end align-items-center gap-3">
-        <div class="dropdown d-none d-md-flex d-lg-flex">
-          <button
-            class="btn p-0 border border-0"
-            type="button"
-            id="dropdownMenu2"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
-              />
-            </svg>
-          </button>
-          <div
-            class="dropdown-menu p-4"
-            aria-labelledby="dropdownMenu2"
-            style="width: 350px; height: 250px"
-          >
-            <form class="d-flex align-items-center flex-column g-5">
-              <div class="col-12 mb-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleDropdownFormEmail2"
-                  placeholder="email@example.com"
-                />
-              </div>
-              <div class="col-12 mb-4">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleDropdownFormPassword2"
-                  placeholder="Password"
-                />
-              </div>
-              <div
-                class="form-check d-flex justify-content-center align-items-center gap-5"
-              >
-                <div class="col-6 submit">
-                  <button
-                    type="submit"
-                    class="btn btn-dark w-100"
-                    style="border-radius: 0"
-                  >
-                    Sign in
-                  </button>
-                </div>
-                <div class="col-6 check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="dropdownCheck2"
-                  />
-                  <label class="form-check-label" for="dropdownCheck2"
-                    >Remember me</label
-                  >
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="icons-svg position-relative">
-          <div class="icon-heart">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-heart"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
-              />
-            </svg>
-          </div>
-          <span class="position-absolute">0</span>
-        </div>
-
-        <div class="icons-svg position-relative">
-          <div
-            class="icon-cart-shopping"
+          <!-- Desktop burger menu trigger -->
+          <img
+            src="../assets/images/Header/burger-bar.png"
+            class="d-none d-lg-block"
             data-bs-toggle="offcanvas"
-            data-bs-target="#cartOffcanvas"
+            href="#offcanvasExampleDesktop"
+            role="button"
+            aria-controls="offcanvasExampleDesktop"
+            width="25"
+            alt="Menu"
+          />
+          <!-- Mobile burger menu trigger -->
+          <img
+            src="../assets/images/Header/burger-bar.png"
+            class="d-block d-lg-none"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExampleMobile"
+            role="button"
+            aria-controls="offcanvasExampleMobile"
+            width="25"
+            alt="Menu"
+          />
+  
+          <div
+            class="search-icon"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#searchOffcanvas"
             role="button"
           >
             <svg
@@ -195,22 +71,139 @@
               width="20"
               height="20"
               fill="currentColor"
-              class="bi bi-cart-dash"
+              class="bi bi-search"
               viewBox="0 0 16 16"
             >
-              <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
               <path
-                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
               />
             </svg>
           </div>
-          <span class="position-absolute">0</span>
         </div>
-      </div>
-      </div>
-
-    </nav>
-
+  
+        <div
+        class="center col-4 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+        >
+          <img src="../assets/images/Header/logo.png" width="200" class="img-fluid" alt="" />
+        </div>
+  
+        <div class="right col-4 col-md-3 col-lg-4 d-flex justify-content-end align-items-center gap-3">
+          <div class="dropdown d-none d-md-flex d-lg-flex">
+            <button
+              class="btn p-0 border border-0"
+              type="button"
+              id="dropdownMenu2"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu p-4"
+              aria-labelledby="dropdownMenu2"
+              style="width: 350px; height: 250px"
+            >
+              <form class="d-flex align-items-center flex-column g-5">
+                <div class="col-12 mb-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleDropdownFormEmail2"
+                    placeholder="email@example.com"
+                  />
+                </div>
+                <div class="col-12 mb-4">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleDropdownFormPassword2"
+                    placeholder="Password"
+                  />
+                </div>
+                <div
+                  class="form-check d-flex justify-content-center align-items-center gap-5"
+                >
+                  <div class="col-6 submit">
+                    <button
+                      type="submit"
+                      class="btn btn-dark w-100"
+                      style="border-radius: 0"
+                    >
+                      Sign in
+                    </button>
+                  </div>
+                  <div class="col-6 check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="dropdownCheck2"
+                    />
+                    <label class="form-check-label" for="dropdownCheck2"
+                      >Remember me</label
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+  
+          <div class="icons-svg position-relative">
+            <div class="icon-heart">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                />
+              </svg>
+            </div>
+            <span class="position-absolute">0</span>
+          </div>
+  
+          <div class="icons-svg position-relative">
+            <div
+              class="icon-cart-shopping"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cartOffcanvas"
+              role="button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-cart-dash"
+                viewBox="0 0 16 16"
+              >
+                <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                />
+              </svg>
+            </div>
+            <span class="position-absolute">0</span>
+          </div>
+        </div>
+        </div>
+  
+      </nav>
+  
       <!-- Desktop Burger Menu -->
       <div
         class="d-none d-lg-flex d-md-flex offcanvas offcanvas-start"
@@ -231,7 +224,7 @@
           <!-- Your existing desktop menu items -->
           <div class="dropdown">
             <a
-              href="../index.html"
+              href="#"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -242,24 +235,12 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 2</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 3</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 2</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 3</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Furniture 1</a></li>
+              <li><a class="dropdown-item" href="#">Furniture 2</a></li>
+              <li><a class="dropdown-item" href="#">Furniture 3</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 1</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 2</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 3</a></li>
             </ul>
           </div>
 
@@ -276,36 +257,22 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li>
-                <a class="dropdown-item" href="#">Shop Grid</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Scroll Sidebar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Filter Sidebar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Filter Dropdown</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+              <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
               <li>
                 <a class="dropdown-item" href="#">Float Filter Sidebar</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Load More Button</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Infinity Scroll</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Ajax Pagination</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Load More Button</a></li>
+              <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+              <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
             </ul>
           </div>
 
           <div class="dropdown">
             <a
-              href="./Product.html"
+              href="#"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -314,29 +281,19 @@
               <span><i class="fa-solid fa-chevron-right"></i></span>
             </a>
             <ul
-            id="Product"  class=" dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
+             id="Product" class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
               <li>
-                <a class="dropdown-item" href="./Product.html">Product 01</a>
+                <a class="dropdown-item" href="../pages/Product1.html"
+                  >Product 01</a
+                >
               </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 02</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 03</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 04</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 05</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 06</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 07</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Product 02</a></li>
+              <li><a class="dropdown-item" href="#">Product 03</a></li>
+              <li><a class="dropdown-item" href="#">Product 04</a></li>
+              <li><a class="dropdown-item" href="#">Product 05</a></li>
+              <li><a class="dropdown-item" href="#">Product 06</a></li>
+              <li><a class="dropdown-item" href="#">Product 07</a></li>
               <li><a class="dropdown-item" href="#">Product 08</a></li>
             </ul>
           </div>
@@ -352,7 +309,7 @@
               <span><i class="fa-solid fa-chevron-right"></i></span>
             </a>
             <ul
-              id="blog" class="dropdown-menu dropdown-menuu position-absolute start-100 w-100 p-5 gap-3"
+            id="Blog"  class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
               <li><a class="dropdown-item" href="#">Blog Default</a></li>
               <li><a class="dropdown-item" href="#">Blog Masonry</a></li>
@@ -365,11 +322,21 @@
             </ul>
           </div>
 
-          <a href="./Aboutus.html">
+          <a
+            href="#"
+            class="d-flex justify-content-between align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="custom-link">About us</span>
           </a>
 
-          <a href="./Contactus.html">
+          <a
+            href="#"
+            class="d-flex justify-content-between align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="custom-link">Contact us</span>
           </a>
           <!-- Repeat for other menu items -->
@@ -389,11 +356,11 @@
             class="offcanvas-title d-flex justify-content-center"
             id="offcanvasLabel"
           >
-            <img src="../assets/images/Header/logo.png" width="60%" alt="" />
+            <img src="../images/Header/logo.png" width="60%" alt="" />
           </div>
         </div>
 
-        <div class="container px-4">
+        <div class="container">
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
@@ -402,7 +369,11 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Home</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Home</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
@@ -424,34 +395,24 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Shop</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Shop</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Shop Grid</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Scroll Sidebar</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Filter Sidebar</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Filter Dropdown</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Float Filter Sidebar</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="#">Load More Button</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Infinity Scroll</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Ajax Pagination</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Load More Button</a></li>
+                <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+                <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
               </ul>
             </div>
           </div>
@@ -464,34 +425,26 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Product</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Product</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./Product.html">Product 01</a>
+                  <a class="dropdown-item" href="../pages/Product1.html"
+                    >Product 01</a
+                  >
                 </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 02</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 03</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 04</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 05</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 06</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 07</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 08</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Product 02</a></li>
+                <li><a class="dropdown-item" href="#">Product 03</a></li>
+                <li><a class="dropdown-item" href="#">Product 04</a></li>
+                <li><a class="dropdown-item" href="#">Product 05</a></li>
+                <li><a class="dropdown-item" href="#">Product 06</a></li>
+                <li><a class="dropdown-item" href="#">Product 07</a></li>
+                <li><a class="dropdown-item" href="#">Product 08</a></li>
               </ul>
             </div>
           </div>
@@ -504,7 +457,11 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Pages</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Pages</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
@@ -522,16 +479,34 @@
 
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
-              <a href="./Aboutus.html">
-                <span class="custom-link">About us</span>
+              <a
+                href="#"
+                class="d-flex justify-content-between align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >About us</span
+                >
               </a>
             </div>
           </div>
 
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
-              <a href="./Contactus.html">
-                <span class="custom-link">Contact us </span>
+              <a
+                href="#"
+                class="d-flex justify-content-between align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Contact us
+                </span>
               </a>
             </div>
           </div>
@@ -539,9 +514,9 @@
           <div class="offcanvas-bottom">
             <nav class="bottom-nav bg-dark">
               <div class="container">
-                <div class="row">
+                <div class="row p-2">
                   <div
-                    class="col-12 d-flex flex-column flex-md-row align-items-center justify-content-center"
+                    class="col-12 mb-2 d-flex flex-column flex-md-row align-items-center justify-content-center"
                   >
                     <!-- Add d-flex flex-column for mobile -->
                     <div
@@ -720,6 +695,7 @@
         </div>
       </div>
     </header>
+
     <!-- /* Navbar End */ -->
 
     <div class="container">
@@ -935,14 +911,14 @@
             </div>
           </div>
         </div>
-        <div class="row align-items-center mb-4">
+        <div class="row align-items-center mb-4 ">
           <!-- Left side - Filter -->
-          <div class="col-md-6 d-flex align-items-center">
+          <div class="Filter col-md-6 col-5 d-flex align-items-center">
             <button class="btn btn-light me-3">
               <i class="bi bi-funnel"></i> FILTER
             </button>
             <!-- View toggle buttons -->
-            <div class="btn-group" role="group">
+            <div class="btn-group d-none d-md-block" role="group">
               <button class="btn btn-light">
                 <i class="bi bi-list"></i>
               </button>
@@ -953,15 +929,15 @@
           </div>
 
           <!-- Right side - Sort and Show only sale -->
-          <div class="col-md-6 d-flex align-items-center justify-content-end">
-            <div class="form-check me-3">
+          <div class="Right-side col-md-6 col-7 d-flex align-items-center justify-content-end">
+            <div class="form-check me-3 d-none d-md-block">
               <input class="form-check-input" type="checkbox" id="saleOnly" />
               <label class="form-check-label" for="saleOnly">
                 Show only products on sale
               </label>
             </div>
 
-            <select class="form-select" style="width: auto">
+            <select class="form-select col-12  w-100">
               <option selected>Sort by latest</option>
               <option>Price: Low to High</option>
               <option>Price: High to Low</option>

@@ -188,6 +188,7 @@
   gap: 15px;
   z-index: 2;
   transition: all 0.3s ease;
+  right: 0;
 }
 
 /* Base style for all icon links */
@@ -202,18 +203,22 @@
   color: #333;
   opacity: 0;
   transition: all 0.3s ease;
+
+
 }
 
 /* Heart icon always visible */
 .icon-container .icon-link:first-child {
   opacity: 1;
-  visibility: visible;
+  visibility: visible; 
+
 }
 
 /* Other icons initial state */
 .icon-container .icon-link:not(:first-child) {
   opacity: 0;
   transition: all 0.3s ease;
+
 }
 
 /* Move container up on hover */
@@ -301,7 +306,7 @@
 
 @media (max-width: 576px) {
   .icon-container {
-    right: 10px;
+    top: 6px;
   }
 
   .label {
@@ -312,6 +317,11 @@
   .hover-link {
     padding: 8px 0;
     font-size: 14px;
+  }
+
+  .icon-link {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -337,4 +347,12 @@
 
 .page-link:focus {
   box-shadow: none;
+}
+
+.Filter{
+  padding-right: 0;
+}
+
+.Right-side{
+  padding-left: 0;
 }

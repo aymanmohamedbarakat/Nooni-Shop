@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/png" />
+    <title>About us – Nooni</title>
+    <link rel="icon" href="../assets/images/Header/favicon.ico" type="image/png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,21 +23,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/Navbar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/Pages/Aboutus.css" />
   </head>
   <body>
     
-    <!-- /* Navbar start */ -->
-    <header class="container-fluid col-12 mt-2 navbar sticky-top" id="#navbar">
+    <header class="container-fluid col-12 mt-2 navbar position-relative" id="#navbar">
       <nav class="container d-flex justify-content-between" id="#navbarr">
-        <div
-          class="left d-flex justify-content-center align-items-center gap-4"
+        <div class="row w-100 align-items-center">
+                <div
+                class="left col-4 col-md-3 col-lg-4 d-flex justify-content-start align-items-center gap-4"
           id="#navbar"
         >
           <!-- Desktop burger menu trigger -->
           <img
-            src="./assets/images/Header/burger-bar.png"
+            src="../assets/images/Header/burger-bar.png"
             class="d-none d-lg-block"
             data-bs-toggle="offcanvas"
             href="#offcanvasExampleDesktop"
@@ -48,7 +50,7 @@
           />
           <!-- Mobile burger menu trigger -->
           <img
-          src="./assets/images/Header/burger-bar.png"
+            src="../assets/images/Header/burger-bar.png"
             class="d-block d-lg-none"
             data-bs-toggle="offcanvas"
             href="#offcanvasExampleMobile"
@@ -57,7 +59,7 @@
             width="25"
             alt="Menu"
           />
-
+  
           <div
             class="search-icon"
             data-bs-toggle="offcanvas"
@@ -78,14 +80,14 @@
             </svg>
           </div>
         </div>
-
+  
         <div
-          class="center d-flex justify-content-center align-items-center gap-4"
+        class="center col-4 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
         >
-          <img src="./assets/images/Header/logo.png" width="200" alt="" />
+          <img src="../assets/images/Header/logo.png" width="200" class="img-fluid" alt="" />
         </div>
-
-        <div class="right d-flex align-items-center gap-4">
+  
+        <div class="right col-4 col-md-3 col-lg-4 d-flex justify-content-end align-items-center gap-3">
           <div class="dropdown d-none d-md-flex d-lg-flex">
             <button
               class="btn p-0 border border-0"
@@ -155,7 +157,7 @@
               </form>
             </div>
           </div>
-
+  
           <div class="icons-svg position-relative">
             <div class="icon-heart">
               <svg
@@ -173,7 +175,7 @@
             </div>
             <span class="position-absolute">0</span>
           </div>
-
+  
           <div class="icons-svg position-relative">
             <div
               class="icon-cart-shopping"
@@ -198,8 +200,10 @@
             <span class="position-absolute">0</span>
           </div>
         </div>
+        </div>
+  
       </nav>
-
+  
       <!-- Desktop Burger Menu -->
       <div
         class="d-none d-lg-flex d-md-flex offcanvas offcanvas-start"
@@ -253,16 +257,16 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li><a class="dropdown-item" href="./pages/Shop.html">Shop Grid</a></li>
-              <li><a class="dropdown-item" href="./pages/Shop.html">Scroll Sidebar</a></li>
-              <li><a class="dropdown-item" href="./pages/Shop.html">Filter Sidebar</a></li>
-              <li><a class="dropdown-item" href="./pages/Shop.html">Filter Dropdown</a></li>
+              <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+              <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
               <li>
-                <a class="dropdown-item" href="./pages/Shop.html">Float Filter Sidebar</a>
+                <a class="dropdown-item" href="#">Float Filter Sidebar</a>
               </li>
-              <li><a class="dropdown-item" href="./pages/Shop.html">Load More Button</a></li>
-              <li><a class="dropdown-item" href="./pages/Shop.html">Infinity Scroll</a></li>
-              <li><a class="dropdown-item" href="./pages/Shop.html">Ajax Pagination</a></li>
+              <li><a class="dropdown-item" href="#">Load More Button</a></li>
+              <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+              <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
             </ul>
           </div>
 
@@ -277,19 +281,19 @@
               <span><i class="fa-solid fa-chevron-right"></i></span>
             </a>
             <ul
-              class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
+             id="Product" class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
               <li>
-                <a class="dropdown-item" href="./pages/Product.html"
+                <a class="dropdown-item" href="../pages/Product1.html"
                   >Product 01</a
                 >
               </li>
-              <li><a class="dropdown-item" href="./pages/Product.html">Product 02</a></li>
-              <li><a class="dropdown-item" href="./pages/Product.html">Product 03</a></li>
-              <li><a class="dropdown-item" href="./pages/Product.html">Product 04</a></li>
-              <li><a class="dropdown-item" href="./pages/Product.html">Product 05</a></li>
-              <li><a class="dropdown-item" href="./pages/Product.html">Product 06</a></li>
-              <li><a class="dropdown-item" href="./pages/Product.html">Product 07</a></li>
+              <li><a class="dropdown-item" href="#">Product 02</a></li>
+              <li><a class="dropdown-item" href="#">Product 03</a></li>
+              <li><a class="dropdown-item" href="#">Product 04</a></li>
+              <li><a class="dropdown-item" href="#">Product 05</a></li>
+              <li><a class="dropdown-item" href="#">Product 06</a></li>
+              <li><a class="dropdown-item" href="#">Product 07</a></li>
               <li><a class="dropdown-item" href="#">Product 08</a></li>
             </ul>
           </div>
@@ -305,7 +309,7 @@
               <span><i class="fa-solid fa-chevron-right"></i></span>
             </a>
             <ul
-              class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
+            id="Blog"  class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
               <li><a class="dropdown-item" href="#">Blog Default</a></li>
               <li><a class="dropdown-item" href="#">Blog Masonry</a></li>
@@ -319,13 +323,19 @@
           </div>
 
           <a
-          href="./pages/Aboutus.html"
+            href="#"
+            class="d-flex justify-content-between align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
             <span class="custom-link">About us</span>
           </a>
 
           <a
-            href="./pages/Contactus.html"
+            href="#"
+            class="d-flex justify-content-between align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
             <span class="custom-link">Contact us</span>
           </a>
@@ -346,12 +356,12 @@
             class="offcanvas-title d-flex justify-content-center"
             id="offcanvasLabel"
           >
-            <img src="./assets/images/Header/logo.png" width="60%" alt="" />
+            <img src="../images/Header/logo.png" width="60%" alt="" />
           </div>
         </div>
 
-        <div class="container px-4">
-          <div class="row col-12 mb-3 ">
+        <div class="container">
+          <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
                 href="#"
@@ -360,6 +370,7 @@
                 aria-expanded="false"
               >
                 <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Home</span
                 >
@@ -385,22 +396,23 @@
                 aria-expanded="false"
               >
                 <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Shop</span
                 >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./pages/Shop.html">Shop Grid</a></li>
-                <li><a class="dropdown-item" href="./pages/Shop.html">Scroll Sidebar</a></li>
-                <li><a class="dropdown-item" href="./pages/Shop.html">Filter Sidebar</a></li>
-                <li><a class="dropdown-item" href="./pages/Shop.html">Filter Dropdown</a></li>
+                <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
                 <li>
-                  <a class="dropdown-item" href="./pages/Shop.html">Float Filter Sidebar</a>
+                  <a class="dropdown-item" href="#">Float Filter Sidebar</a>
                 </li>
-                <li><a class="dropdown-item" href="./pages/Shop.html">Load More Button</a></li>
-                <li><a class="dropdown-item" href="./pages/Shop.html">Infinity Scroll</a></li>
-                <li><a class="dropdown-item" href="./pages/Shop.html">Ajax Pagination</a></li>
+                <li><a class="dropdown-item" href="#">Load More Button</a></li>
+                <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+                <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
               </ul>
             </div>
           </div>
@@ -414,6 +426,7 @@
                 aria-expanded="false"
               >
                 <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Product</span
                 >
@@ -421,17 +434,17 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./pages/Product.html"
+                  <a class="dropdown-item" href="../pages/Product1.html"
                     >Product 01</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="./pages/Product.html">Product 02</a></li>
-                <li><a class="dropdown-item" href="./pages/Product.html">Product 03</a></li>
-                <li><a class="dropdown-item" href="./pages/Product.html">Product 04</a></li>
-                <li><a class="dropdown-item" href="./pages/Product.html">Product 05</a></li>
-                <li><a class="dropdown-item" href="./pages/Product.html">Product 06</a></li>
-                <li><a class="dropdown-item" href="./pages/Product.html">Product 07</a></li>
-                <li><a class="dropdown-item" href="./pages/Product.html">Product 08</a></li>
+                <li><a class="dropdown-item" href="#">Product 02</a></li>
+                <li><a class="dropdown-item" href="#">Product 03</a></li>
+                <li><a class="dropdown-item" href="#">Product 04</a></li>
+                <li><a class="dropdown-item" href="#">Product 05</a></li>
+                <li><a class="dropdown-item" href="#">Product 06</a></li>
+                <li><a class="dropdown-item" href="#">Product 07</a></li>
+                <li><a class="dropdown-item" href="#">Product 08</a></li>
               </ul>
             </div>
           </div>
@@ -445,6 +458,7 @@
                 aria-expanded="false"
               >
                 <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Pages</span
                 >
@@ -466,9 +480,13 @@
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
-              href="./pages/Aboutus.html"
+                href="#"
+                class="d-flex justify-content-between align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >About us</span
                 >
@@ -479,9 +497,13 @@
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
-              href="./pages/Contactus.html"
+                href="#"
+                class="d-flex justify-content-between align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
                 <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Contact us
                 </span>
@@ -492,9 +514,9 @@
           <div class="offcanvas-bottom">
             <nav class="bottom-nav bg-dark">
               <div class="container">
-                <div class="row">
+                <div class="row p-2">
                   <div
-                    class="col-12  d-flex flex-column flex-md-row align-items-center justify-content-center"
+                    class="col-12 mb-2 d-flex flex-column flex-md-row align-items-center justify-content-center"
                   >
                     <!-- Add d-flex flex-column for mobile -->
                     <div
@@ -673,7 +695,390 @@
         </div>
       </div>
     </header>
-    <!-- /* Navbar End */ -->
+
+
+
+    <div class="about-us">
+          <div class="container">
+      <div class="aboutus-container mt-5">
+        <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+          <ol class="breadcrumb d-flex justify-content-center text-center">
+            <li class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item">
+              <a href="#">About us</a>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="aboutus-title mb-5">
+          <h4 class="text-center">About Noon’i</h4>
+          <h5 class="text-center">
+            Noon’i was established in 1990, consectetur eleifend commodo at,
+            consectetur eu justo. Sed viverra consectetur risus nec ultricies.
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 banner-bg"></div>
+
+    <div class="container">
+      <div
+        class="row mt-5 flex-column-reverse text-center flex-md-row text-md-start"
+      >
+        <div class="col-md-6 col-12">
+          <img src="../assets/images/about/about-3.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-lg-6 col-12 content-section px-5">
+          <h5 class="content-title">HOW WE WORKS</h5>
+
+          <div class="process-step">
+            <h5>Production Design</h5>
+            <p>
+              Integer dignissim sagittis quam. Maecenas sem eros, rutrum vitae
+              risus eget, vulputate aliquam nisi.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <h5>Manufacturing</h5>
+            <p>
+              Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi
+              ex gravida neque tempus.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <h5>Marketing and selling</h5>
+            <p>
+              Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque
+              tempus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="team-section">
+      <div class="container">
+        <h4 class="team-title">OUR TEAM</h4>
+
+        <div class="swiper team-swiper">
+          <div class="swiper-wrapper">
+            <!-- Team Member 1 -->
+            <div class="swiper-slide">
+              <div class="team-member">
+                <img
+                  src="../assets//images/about/team-1.jpg"
+                  alt="Chris Patterson"
+                  class="member-image"
+                />
+                <div class="social-overlay">
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-position">GRAPHIC DESIGN</div>
+                  <h5 class="member-name">Chris Patterson</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="swiper-slide">
+              <div class="team-member">
+                <img
+                  src="../assets//images/about/team-2.jpg"
+                  alt="Chris Patterson"
+                  class="member-image"
+                />
+                <div class="social-overlay">
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-position">MARKETING</div>
+                  <h5 class="member-name">Isabella</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="swiper-slide">
+              <div class="team-member">
+                <img
+                  src="../assets//images/about/team-3.jpg"
+                  alt="Chris Patterson"
+                  class="member-image"
+                />
+                <div class="social-overlay">
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-position">CEO & Founder</div>
+                  <h5 class="member-name">John Hossain</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="swiper-slide">
+              <div class="team-member">
+                <img
+                  src="../assets/images/about/team-4.jpg"
+                  alt="Chris Patterson"
+                  class="img-fluid member-image"
+                />
+                <div class="social-overlay">
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-position">Saler</div>
+                  <h5 class="member-name">Charlotte</h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="swiper-slide">
+              <div class="team-member">
+                <img
+                  src="../assets//images/about/team-1.jpg"
+                  alt="Chris Patterson"
+                  class="member-image"
+                />
+                <div class="social-overlay">
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <div class="member-position">GRAPHIC DESIGN</div>
+                  <h5 class="member-name">Chris Patterson</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="parallax-section">
+      <div class="overlaay"></div>
+      <div class="content-wrapper">
+        <div class="text-content ">
+          <h5 class="text-white">We Deliver Genuine Products</h5>
+          <p class="text-center">
+            Sed viverra consectetur risus nec ultricies. Curabitur tincidunt
+            tincidunt urna id maximus.
+          </p>
+          <a href="#" class="contact-btn">CONTACT US</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands-section py-5">
+      <div class="container">
+        <div class="swiper brands-swiper">
+          <div class="swiper-wrapper">
+            <!-- Brand 1 -->
+            <div class="swiper-slide">
+              <div class="brand-item">
+                <img
+                  src="../assets//images/about/brand-1.png"
+                  alt="Creative Design"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- Brand 2 -->
+            <div class="swiper-slide">
+              <div class="brand-item">
+                <img
+                  src="../assets//images/about/brand-2.png"
+                  alt="Creative Design"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- Brand 3 -->
+            <div class="swiper-slide">
+              <div class="brand-item">
+                <img
+                  src="../assets//images/about/brand-3.png"
+                  alt="Creative Design"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- Brand 4 -->
+            <div class="swiper-slide">
+              <div class="brand-item">
+                <img
+                  src="../assets//images/about/brand-4.png"
+                  alt="Creative Design"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- Brand 5 -->
+            <div class="swiper-slide">
+              <div class="brand-item">
+                <img
+                  src="../assets//images/about/brand-5.png"
+                  alt="Creative Design"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- Brand 6 -->
+            <div class="swiper-slide">
+              <div class="brand-item">
+                <img
+                  src="../assets/images/about/brand-6.png"
+                  alt="Creative Design"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <footer class="footer-area ">
+      <div class="container">
+        <div class="row mt-4 border-top py-5">
+          <!-- Logo & Contact Section -->
+          <div
+            class="col-12 col-lg-3 col-md-12 mb-4 mb-lg-0 LogoContactSection"
+          >
+            <div class="footer-logo mb-3">
+              <img
+                src="../assets/images/Footer/logo.png"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="footer-contact">
+              <p>Text: +00(234)23-45-666</p>
+              <p>Mon – Fri: 8 am – 8 pm</p>
+              <p>Sat – Sun: 8 am – 7 pm</p>
+            </div>
+          </div>
+
+          <!-- Middle Sections Wrapper -->
+          <div class="mid-section d-flex col-lg-5 col-md-12">
+            <!-- About Section -->
+            <div class="col-lg-3 col-md-3">
+              <h6 class="footer-title">ABOUT</h6>
+              <ul class="footer-links">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Influencers</a></li>
+                <li><a href="#">Join our team</a></li>
+              </ul>
+            </div>
+
+            <!-- Customer Services Section -->
+            <div class="col-lg-5 col-md-5">
+              <h6 class="footer-title">CUSTOMER SERVICES</h6>
+              <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Find Store</a></li>
+                <li><a href="#">Book appointment</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter  Section -->
+          <div class="Newsletter col-lg-4 col-md-7">
+            <h6 class="footer-title">SIGN UP FOR EMAILS</h6>
+            <p class="newsletter-text">
+              Enjoy 15% off* your first order when sign up to our newsletter
+            </p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your e-mail address"
+                  required
+                />
+                <button class="btn btn-subscribe" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <div class="social-icons mt-4">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row border-top pt-4">
+          <div class="col-md-4 col-12 order-2 order-md-1">
+            <ul class="footer-bottom-links d-flex  justify-content-center">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12 text-center order-1 order-md-2 ">
+            <p class="copyright">© Nooni. All Rights Reserved.</p>
+          </div>
+          <div
+            class="col-md-4 text-center text-lg-end mt-lg-0 mt-3 payment-methodss order-3"
+          >
+            <img
+              src="../assets/images/Footer/payment.png"
+              alt="Payment Methods"
+              class="img-fluid payment-methods"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -684,6 +1089,7 @@
       new WOW().init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/Navbar.js"></script>
     <script src="../js/pages/Aboutus.js"></script>
   </body>
 </html>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/png" />
+    <title>Product – Nooni</title>
+    <link rel="icon" href="../assets/images/Header/favicon.ico" type="image/png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,7 +23,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
     <link rel="stylesheet" href="../styles/Pages/Product.css" />
     <link rel="stylesheet" href="../styles/Navbar.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
@@ -32,13 +32,11 @@
   <body>
     
     <!-- /* Navbar start */ -->
-    <header
-      class="container-fluid col-12 mt-2 navbar position-relative"
-      id="#navbar"
-    >
+    <header class="container-fluid col-12 mt-2 navbar position-relative" id="#navbar">
       <nav class="container d-flex justify-content-between" id="#navbarr">
-        <div
-          class="left d-flex justify-content-center align-items-center gap-4"
+        <div class="row w-100 align-items-center">
+                <div
+                class="left col-4 col-md-3 col-lg-4 d-flex justify-content-start align-items-center gap-4"
           id="#navbar"
         >
           <!-- Desktop burger menu trigger -->
@@ -63,7 +61,7 @@
             width="25"
             alt="Menu"
           />
-
+  
           <div
             class="search-icon"
             data-bs-toggle="offcanvas"
@@ -84,14 +82,14 @@
             </svg>
           </div>
         </div>
-
+  
         <div
-          class="center d-flex justify-content-center align-items-center gap-4"
+        class="center col-4 col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
         >
-          <img src="../assets/images/Header/logo.png" width="150" alt="" />
+          <img src="../assets/images/Header/logo.png" width="200" class="img-fluid" alt="" />
         </div>
-
-        <div class="right d-flex align-items-center gap-4">
+  
+        <div class="right col-4 col-md-3 col-lg-4 d-flex justify-content-end align-items-center gap-3">
           <div class="dropdown d-none d-md-flex d-lg-flex">
             <button
               class="btn p-0 border border-0"
@@ -161,7 +159,7 @@
               </form>
             </div>
           </div>
-
+  
           <div class="icons-svg position-relative">
             <div class="icon-heart">
               <svg
@@ -179,7 +177,7 @@
             </div>
             <span class="position-absolute">0</span>
           </div>
-
+  
           <div class="icons-svg position-relative">
             <div
               class="icon-cart-shopping"
@@ -204,8 +202,10 @@
             <span class="position-absolute">0</span>
           </div>
         </div>
+        </div>
+  
       </nav>
-
+  
       <!-- Desktop Burger Menu -->
       <div
         class="d-none d-lg-flex d-md-flex offcanvas offcanvas-start"
@@ -226,7 +226,7 @@
           <!-- Your existing desktop menu items -->
           <div class="dropdown">
             <a
-              href="../index.html"
+              href="#"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -237,24 +237,12 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 2</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Furniture 3</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 2</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../index.html">Fashion 3</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Furniture 1</a></li>
+              <li><a class="dropdown-item" href="#">Furniture 2</a></li>
+              <li><a class="dropdown-item" href="#">Furniture 3</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 1</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 2</a></li>
+              <li><a class="dropdown-item" href="#">Fashion 3</a></li>
             </ul>
           </div>
 
@@ -271,36 +259,22 @@
             <ul
               class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
-              <li>
-                <a class="dropdown-item" href="#">Shop Grid</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Scroll Sidebar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Filter Sidebar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Filter Dropdown</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+              <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
               <li>
                 <a class="dropdown-item" href="#">Float Filter Sidebar</a>
               </li>
-              <li>
-                <a class="dropdown-item" href="#">Load More Button</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Infinity Scroll</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Ajax Pagination</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Load More Button</a></li>
+              <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+              <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
             </ul>
           </div>
 
           <div class="dropdown">
             <a
-              href="./Product.html"
+              href="#"
               class="d-flex justify-content-between align-items-center"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -309,29 +283,19 @@
               <span><i class="fa-solid fa-chevron-right"></i></span>
             </a>
             <ul
-            id="Product"  class=" dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
+             id="Product" class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
               <li>
-                <a class="dropdown-item" href="./Product.html">Product 01</a>
+                <a class="dropdown-item" href="../pages/Product1.html"
+                  >Product 01</a
+                >
               </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 02</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 03</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 04</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 05</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 06</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./Product.html">Product 07</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Product 02</a></li>
+              <li><a class="dropdown-item" href="#">Product 03</a></li>
+              <li><a class="dropdown-item" href="#">Product 04</a></li>
+              <li><a class="dropdown-item" href="#">Product 05</a></li>
+              <li><a class="dropdown-item" href="#">Product 06</a></li>
+              <li><a class="dropdown-item" href="#">Product 07</a></li>
               <li><a class="dropdown-item" href="#">Product 08</a></li>
             </ul>
           </div>
@@ -347,7 +311,7 @@
               <span><i class="fa-solid fa-chevron-right"></i></span>
             </a>
             <ul
-              id="blog" class="dropdown-menu dropdown-menuu position-absolute start-100 w-100 p-5 gap-3"
+            id="Blog"  class="dropdown-menu dropdown-menuu position-absolute start-100 top-0 w-100 p-5 gap-3"
             >
               <li><a class="dropdown-item" href="#">Blog Default</a></li>
               <li><a class="dropdown-item" href="#">Blog Masonry</a></li>
@@ -360,11 +324,21 @@
             </ul>
           </div>
 
-          <a href="./Aboutus.html">
+          <a
+            href="#"
+            class="d-flex justify-content-between align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="custom-link">About us</span>
           </a>
 
-          <a href="./Contactus.html">
+          <a
+            href="#"
+            class="d-flex justify-content-between align-items-center"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <span class="custom-link">Contact us</span>
           </a>
           <!-- Repeat for other menu items -->
@@ -384,11 +358,11 @@
             class="offcanvas-title d-flex justify-content-center"
             id="offcanvasLabel"
           >
-            <img src="../assets/images/Header/logo.png" width="60%" alt="" />
+            <img src="../images/Header/logo.png" width="60%" alt="" />
           </div>
         </div>
 
-        <div class="container px-4">
+        <div class="container">
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
               <a
@@ -397,7 +371,11 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Home</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Home</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
@@ -419,34 +397,24 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Shop</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Shop</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="#">Shop Grid</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Scroll Sidebar</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Filter Sidebar</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Filter Dropdown</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                <li><a class="dropdown-item" href="#">Scroll Sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Filter Sidebar</a></li>
+                <li><a class="dropdown-item" href="#">Filter Dropdown</a></li>
                 <li>
                   <a class="dropdown-item" href="#">Float Filter Sidebar</a>
                 </li>
-                <li>
-                  <a class="dropdown-item" href="#">Load More Button</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Infinity Scroll</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Ajax Pagination</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Load More Button</a></li>
+                <li><a class="dropdown-item" href="#">Infinity Scroll</a></li>
+                <li><a class="dropdown-item" href="#">Ajax Pagination</a></li>
               </ul>
             </div>
           </div>
@@ -459,34 +427,26 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Product</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Product</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="./Product.html">Product 01</a>
+                  <a class="dropdown-item" href="../pages/Product1.html"
+                    >Product 01</a
+                  >
                 </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 02</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 03</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 04</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 05</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 06</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 07</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./Product.html">Product 08</a>
-                </li>
+                <li><a class="dropdown-item" href="#">Product 02</a></li>
+                <li><a class="dropdown-item" href="#">Product 03</a></li>
+                <li><a class="dropdown-item" href="#">Product 04</a></li>
+                <li><a class="dropdown-item" href="#">Product 05</a></li>
+                <li><a class="dropdown-item" href="#">Product 06</a></li>
+                <li><a class="dropdown-item" href="#">Product 07</a></li>
+                <li><a class="dropdown-item" href="#">Product 08</a></li>
               </ul>
             </div>
           </div>
@@ -499,7 +459,11 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span class="custom-link">Pages</span>
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Pages</span
+                >
                 <span><i class="fa-solid fa-chevron-right"></i></span>
               </a>
               <ul class="dropdown-menu">
@@ -517,16 +481,34 @@
 
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
-              <a href="./Aboutus.html">
-                <span class="custom-link">About us</span>
+              <a
+                href="#"
+                class="d-flex justify-content-between align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >About us</span
+                >
               </a>
             </div>
           </div>
 
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
-              <a href="./Contactus.html">
-                <span class="custom-link">Contact us </span>
+              <a
+                href="#"
+                class="d-flex justify-content-between align-items-center"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span
+                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
+                  class="custom-link"
+                  >Contact us
+                </span>
               </a>
             </div>
           </div>
@@ -534,9 +516,9 @@
           <div class="offcanvas-bottom">
             <nav class="bottom-nav bg-dark">
               <div class="container">
-                <div class="row">
+                <div class="row p-2">
                   <div
-                    class="col-12 d-flex flex-column flex-md-row align-items-center justify-content-center"
+                    class="col-12 mb-2 d-flex flex-column flex-md-row align-items-center justify-content-center"
                   >
                     <!-- Add d-flex flex-column for mobile -->
                     <div
@@ -715,11 +697,24 @@
         </div>
       </div>
     </header>
+
     <!-- /* Navbar End */ -->
 
 
 
     <div class="container mt-5">
+      <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+        <ol class="breadcrumb d-flex justify-content-center text-center">
+          <li class="breadcrumb-item active">Home</li>
+          <li class="breadcrumb-item active">Shop</li>
+          <li class="breadcrumb-item active">New & Now</li>
+          <li class="breadcrumb-item active">New Arrivals</li>
+          <li class="breadcrumb-item ">
+           <a href="#">Wood Outdoor Adirondack Chair</a> 
+          </li>
+        </ol>
+      </nav>
+
       <div class="d-flex gap-5 flex-column flex-md-row justify-content-center">
         <!-- Carousel Section -->
         <div
@@ -731,7 +726,7 @@
             <div class="position-absolute top-0 start-0 z-3 w-100">
               <div class="labels">
                 <span class="labell HOT">HOT</span>
-                <span class="labell SALEE">SOLD</span>
+                <span class="labell SALEE">SALE</span>
               </div>
               <button
                 class="btn btn-light position-absolute rounded-5 zoom-icon"
@@ -741,28 +736,28 @@
             </div>
             <div class="carousel-item active">
               <img
-                src="../../images/Product/Product 1-0.jpg"
+                src="../assets/images/Product/Product 1-0.jpg"
                 class="d-block w-100"
                 alt="Furniture 1"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="../../images/Product/Product 1-1.jpg"
+                src="../assets/images/Product/Product 1-1.jpg"
                 class="d-block w-100"
                 alt="Furniture 2"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="../../images/Product/Product 1-3.jpg"
+                src="../assets/images/Product/Product 1-3.jpg"
                 class="d-block w-100"
                 alt="Furniture 3"
               />
             </div>
             <div class="carousel-item">
               <img
-                src="../../images/Product/Product 1-4.jpg"
+                src="../assets/images/Product/Product 1-4.jpg"
                 class="d-block w-100"
                 alt="Furniture 4"
               />
@@ -770,30 +765,30 @@
           </div>
 
           <!-- Custom Indicators -->
-          <div class="custom-indicators flex-md-column flex-row">
+          <div class="custom-indicators flex-md-column flex-wrap justify-content-center justify-content-md-start flex-row">
             <img
-              src="../../images/Product/Product 1-0.jpg"
+              src="../assets/images/Product/Product 1-0.jpg "
               data-bs-target="#furnitureCarousel"
               data-bs-slide-to="0"
               class="img-container active"
               alt="Indicator 1"
             />
             <img
-              src="../../images/Product/Product 1-1.jpg"
+              src="../assets/images/Product/Product 1-1.jpg"
               data-bs-target="#furnitureCarousel"
               data-bs-slide-to="1"
               class="img-container"
               alt="Indicator 2"
             />
             <img
-              src="../../images/Product/Product 1-3.jpg"
+              src="../assets/images/Product/Product 1-3.jpg"
               data-bs-target="#furnitureCarousel"
               data-bs-slide-to="2"
               class="img-container"
               alt="Indicator 3"
             />
             <img
-              src="../../images/Product/Product 1-4.jpg"
+              src="../assets/images/Product/Product 1-4.jpg"
               data-bs-target="#furnitureCarousel"
               data-bs-slide-to="3"
               class="img-container"
@@ -815,7 +810,7 @@
             </div>
           </div>
 
-          <div class="countdown-timer w-75 mt-3 bg-black text-white p-2">
+          <div class="countdown-timer col-md-9 col-12 mt-3 bg-black text-white p-2">
             <div class="row text-center d-flex align-items-center">
               <div class="col d-flex flex-column">
                 <span>1005</span>
@@ -860,40 +855,40 @@
             <p>COLOR:</p>
             <div class="colors-select d-flex gap-2">
               <div class="color-option border border-black">
-                <button class="border-0">
+                <a class="border-0">
                   <img
-                    src="../../images/Product/black-46x46.jpg"
+                    src="../assets/images/Product/black-46x46.jpg"
                     class="img-thumbnail"
                     alt=""
                   />
-                </button>
+                </a>
               </div>
               <div class="color-option border border-black">
-                <button class="border-0">
+                <a class="border-0">
                   <img
-                    src="../../images/Product/green-46x46.jpg"
+                    src="../assets/images/Product/green-46x46.jpg"
                     class="img-thumbnail"
                     alt=""
                   />
-                </button>
+                </a>
               </div>
               <div class="color-option border border-black">
-                <button class="border-0">
+                <a class="border-0">
                   <img
-                    src="../../images/Product/grey-46x46.jpg"
+                    src="../assets/images/Product/grey-46x46.jpg"
                     class="img-thumbnail"
                     alt=""
                   />
-                </button>
+                </a>
               </div>
               <div class="color-option border border-black">
-                <button class="border-0">
+                <a class="border-0">
                   <img
-                    src="../../images/Product/teak-46x46.jpg"
+                    src="../assets/images/Product/teak-46x46.jpg"
                     class="img-thumbnail"
                     alt=""
                   />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -928,7 +923,8 @@
             <div
               class="d-flex justify-content-between flex-md-row align-items-center mb-2"
             >
-              <div class="d-flex gap-3 mb-2 mb-md-0">
+            <div class="row col-12">
+                <div class="d-flex col-md-8  col-12 gap-3 mb-2 mb-md-0">
                 <a href="" class="text-decoration-none text-black"
                   ><i class="far fa-heart"></i> Add to wishlist</a
                 >
@@ -936,7 +932,7 @@
                   ><i class="fas fa-exchange-alt"></i> Compare</a
                 >
               </div>
-              <div class="social-share ms-md-auto">
+              <div class="social-share col-md-4 col-12 d-flex justify-content-end ">
                 <a href="#" class="me-2 text-decoration-none text-black"
                   ><i class="fab fa-twitter"></i
                 ></a>
@@ -947,6 +943,8 @@
                   ><i class="fab fa-facebook"></i
                 ></a>
               </div>
+            </div>
+
             </div>
             <p>SKU: 0093</p>
             <p>BRANDS: Creative Design</p>
@@ -1059,11 +1057,11 @@
               <div class="product">
                 <div class="image-container">
                   <img
-                    src="../../images/ourProduct/our-product 1.jpg"
+                    src="../assets/images/ourProduct/our-product 1.jpg"
                     class="image-default"
                   />
                   <img
-                    src="../../images/ourProduct/our-product 1 hover.jpg"
+                    src="../assets/images/ourProduct/our-product 1 hover.jpg"
                     class="image-hover"
                   />
                   <div class="icon-container">
@@ -1095,11 +1093,11 @@
               <div class="product">
                 <div class="image-container">
                   <img
-                    src="../../images/ourProduct/our-product 2.jpg"
+                    src="../assets/images/ourProduct/our-product 2.jpg"
                     class="image-default"
                   />
                   <img
-                    src="../../images/ourProduct/our-product 2 hover.jpg"
+                    src="../assets/images/ourProduct/our-product 2 hover.jpg"
                     class="image-hover"
                   />
                   <div class="icon-container">
@@ -1134,11 +1132,11 @@
                     <span class="label SALE">SALE</span>
                   </div>
                   <img
-                    src="../../images/ourProduct/our-product 3.jpg"
+                    src="../assets/images/ourProduct/our-product 3.jpg"
                     class="image-default"
                   />
                   <img
-                    src="../../images/ourProduct/our-product 3 hover.jpg"
+                    src="../assets/images/ourProduct/our-product 3 hover.jpg"
                     class="image-hover"
                   />
                   <div class="icon-container">
@@ -1171,11 +1169,11 @@
               <div class="product">
                 <div class="image-container">
                   <img
-                    src="../../images/ourProduct/our-product 4.jpg"
+                    src="../assets/images/ourProduct/our-product 4.jpg"
                     class="image-default"
                   />
                   <img
-                    src="../../images/ourProduct/our-product 4 hover.jpg"
+                    src="../assets/images/ourProduct/our-product 4 hover.jpg"
                     class="image-hover"
                   />
                   <div class="icon-container">
@@ -1208,11 +1206,11 @@
                     <span class="label SALE">SALE</span>
                   </div>
                   <img
-                    src="../../images/ourProduct/our-product 4 hover.jpg"
+                    src="../assets/images/ourProduct/our-product 4 hover.jpg"
                     class="image-default"
                   />
                   <img
-                    src="../../images/ourProduct/our-product 4.jpg"
+                    src="../assets/images/ourProduct/our-product 4.jpg"
                     class="image-hover"
                   />
                   <div class="icon-container">
@@ -1247,11 +1245,11 @@
                     <span class="label SALE">SALE</span>
                   </div>
                   <img
-                    src="../../images/ourProduct/our-product 5.jpg"
+                    src="../assets/images/ourProduct/our-product 5.jpg"
                     class="image-default"
                   />
                   <img
-                    src="../../images/ourProduct/our-product 5 hover.jpg"
+                    src="../assets/images/ourProduct/our-product 5 hover.jpg"
                     class="image-hover"
                   />
                   <div class="icon-container">
@@ -1287,11 +1285,11 @@
                     <span class="label SALE">SALE</span>
                   </div>
                   <img
-                    src="../../images/ourProduct/our-product 6.jpg"
+                    src="../assets/images/ourProduct/our-product 6.jpg"
                     class="image-default"
                   />
                   <img
-                    src="../../images/ourProduct/our-product 6 hover.jpg"
+                    src="../assets/images/ourProduct/our-product 6 hover.jpg"
                     class="image-hover"
                   />
                   <div class="icon-container">
@@ -1322,11 +1320,11 @@
               <div class="product">
                 <div class="image-container">
                   <img
-                    src="../../images/ourProduct/our-product 7.jpg"
+                    src="../assets/images/ourProduct/our-product 7.jpg"
                     class="image-default"
                   />
                   <img
-                    src="../../images/ourProduct/our-product 7 hover.jpg"
+                    src="../assets/images/ourProduct/our-product 7 hover.jpg"
                     class="image-hover"
                   />
                   <div class="icon-container">
@@ -1361,6 +1359,111 @@
       </section>
     </div>
 
+    <footer class="footer-area py-5">
+      <div class="container">
+        <div class="row mt-4 border-top py-5">
+          <!-- Logo & Contact Section -->
+          <div
+            class="col-12 col-lg-3 col-md-12 mb-4 mb-lg-0 LogoContactSection"
+          >
+            <div class="footer-logo mb-3">
+              <img
+                src="../assets/images/Footer/logo.png"
+                alt="Logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="footer-contact">
+              <p>Text: +00(234)23-45-666</p>
+              <p>Mon – Fri: 8 am – 8 pm</p>
+              <p>Sat – Sun: 8 am – 7 pm</p>
+            </div>
+          </div>
+
+          <!-- Middle Sections Wrapper -->
+          <div class="mid-section d-flex col-lg-5 col-md-12">
+            <!-- About Section -->
+            <div class="col-lg-3 col-md-3">
+              <h6 class="footer-title">ABOUT</h6>
+              <ul class="footer-links">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Influencers</a></li>
+                <li><a href="#">Join our team</a></li>
+              </ul>
+            </div>
+
+            <!-- Customer Services Section -->
+            <div class="col-lg-5 col-md-5">
+              <h6 class="footer-title">CUSTOMER SERVICES</h6>
+              <ul class="footer-links">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Find Store</a></li>
+                <li><a href="#">Book appointment</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Newsletter  Section -->
+          <div class="Newsletter col-lg-4 col-md-7">
+            <h6 class="footer-title">SIGN UP FOR EMAILS</h6>
+            <p class="newsletter-text">
+              Enjoy 15% off* your first order when sign up to our newsletter
+            </p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your e-mail address"
+                  required
+                />
+                <button class="btn btn-subscribe" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <div class="social-icons mt-4">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row border-top pt-4">
+          <div class="col-md-4 col-12 order-2 order-md-1">
+            <ul class="footer-bottom-links d-flex  justify-content-center">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-12 text-center order-1 order-md-2 ">
+            <p class="copyright">© Nooni. All Rights Reserved.</p>
+          </div>
+          <div
+            class="col-md-4 text-center text-lg-end mt-lg-0 mt-3 payment-methodss order-3"
+          >
+            <img
+              src="../assets/images/Footer/payment.png"
+              alt="Payment Methods"
+              class="img-fluid payment-methods"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <script
@@ -1373,6 +1476,7 @@
       new WOW().init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../js/pages/Product.js"></script>
+    <script src="../js/Navbar.js"></script>
+    <script src="../js/Pages/Product.js"></script>
   </body>
 </html>

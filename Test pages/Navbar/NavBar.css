@@ -83,7 +83,7 @@
   display: none;
   position: absolute;
   background-color: white;
-  width: 110%;
+  width: 112%;
   height: 600px;
   left: -10px;
   top: 100%;
@@ -167,10 +167,21 @@
   left: -350px !important;
 }
 
-.dropdown-menu[data-bs-popper] {
-  top: 73px;
-  left: -211px;
-  margin-top: var(--bs-dropdown-spacer);
+
+.offcanvas:has(.dropdown-menu.show) .custom-dropdown {
+  display: none;
+ }
+ 
+ .offcanvas:has(.dropdown-menu.show) .custom-dropdown:has(.dropdown-menu.show) {
+  display: block;
+ }
+
+ #Product.dropdown-menuu{
+  top: -70px !important;
+}
+
+#Blog.dropdown-menuu{
+  top: -130px !important;
 }
 
 /* Icons styles */
