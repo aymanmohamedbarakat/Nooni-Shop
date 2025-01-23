@@ -324,18 +324,12 @@
 
           <a
             href="./pages/Aboutus.html"
-            class="d-flex justify-content-between align-items-center"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
           >
             <span class="custom-link">About us</span>
           </a>
 
           <a
             href="./pages/Contactus.html"
-            class="d-flex justify-content-between align-items-center"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
           >
             <span class="custom-link">Contact us</span>
           </a>
@@ -350,17 +344,17 @@
         id="offcanvasExampleMobile"
         aria-labelledby="offcanvasExampleLabel"
       >
-        <div class="offcanvas-header p-5">
+        <div class="offcanvas-header border-bottom  py-4">
           <div
             class="offcanvas-title d-flex justify-content-center"
             id="offcanvasLabel"
           >
-            <img src="../images/Header/logo.png" width="60%" alt="" />
+            <img src="./assets/images/Header/logo.png" width="60%" alt="" />
           </div>
         </div>
 
         <div class="container">
-          <div class="row col-12 mb-3">
+          <div class="row col-12 mb-3 mt-4">
             <div class="dropdown custom-dropdown">
               <a
                 href="#"
@@ -369,7 +363,6 @@
                 aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Home</span
                 >
@@ -395,7 +388,6 @@
                 aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Shop</span
                 >
@@ -425,7 +417,6 @@
                 aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Product</span
                 >
@@ -457,7 +448,6 @@
                 aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Pages</span
                 >
@@ -480,12 +470,8 @@
             <div class="dropdown custom-dropdown">
               <a
                 href="./pages/Aboutus.html"
-                class="d-flex justify-content-between align-items-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >About us</span
                 >
@@ -497,12 +483,8 @@
             <div class="dropdown custom-dropdown">
               <a
                 href="./pages/Contactus.html"
-                class="d-flex justify-content-between align-items-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 <span
-                  style="font-size: clamp(0.2rem, 8vw, 1.5rem)"
                   class="custom-link"
                   >Contact us
                 </span>
@@ -514,63 +496,32 @@
             <nav class="bottom-nav bg-dark">
               <div class="container">
                 <div class="row p-2">
-                  <div
-                    class="col-12 mb-2 d-flex flex-column flex-md-row align-items-center justify-content-center"
-                  >
-                    <!-- Add d-flex flex-column for mobile -->
-                    <div
-                      class="language-currency-buttons d-flex flex-column flex-md-row gap-2"
-                    >
-                      <!-- Language Dropdown -->
-                      <div class="btn-group dropup flex-grow-1">
-                        <button
-                          type="button"
-                          class="btn text-light dropdown-toggle"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                  <div class="col-12 mb-2 d-flex flex-column justify-content-between">
+                    <div class="d-flex col-12 align-items-center gap-2">
+                      <!-- Language -->
+                      <div class="btn-group dropup d-inline-flex">
+                        <button class="btn text-light dropdown-toggle" data-bs-toggle="dropdown">
                           <span class="nav-text">English</span>
                         </button>
-                        <ul class="dropdown-menu w-100">
-                          <li>
-                            <a class="dropdown-item nav-text" href="#"
-                              >Deutsch</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item nav-text" href="#"
-                              >Français</a
-                            >
-                          </li>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item nav-text" href="#">Deutsch</a></li>
+                          <li><a class="dropdown-item nav-text" href="#">Français</a></li>
                         </ul>
                       </div>
-
-                      <!-- Currency Dropdown -->
-                      <div class="btn-group dropup flex-grow-1">
-                        <button
-                          type="button"
-                          class="btn text-light dropdown-toggle"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
+                      <!-- Currency -->
+                      <div class="btn-group dropup d-inline-flex">
+                        <button class="btn text-light dropdown-toggle" data-bs-toggle="dropdown">
                           <span class="nav-text">USD</span>
                         </button>
-                        <ul class="dropdown-menu w-100">
-                          <li>
-                            <a class="dropdown-item nav-text" href="#">USD</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item nav-text" href="#">EUR</a>
-                          </li>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item nav-text" href="#">USD</a></li>
+                          <li><a class="dropdown-item nav-text" href="#">EUR</a></li>
                         </ul>
                       </div>
                     </div>
-
-                    <div class="col-6">
-                      <a
-                        href="#"
-                        class="nav-link text-white d-flex align-items-center justify-content-center gap-2"
-                      >
+                    <!-- Login -->
+                    <div class="d-inline-flex">
+                      <a href="#" class="nav-link text-white d-inline-flex align-items-center gap-2">
                         <i class="fa-solid fa-user"></i>
                         <span class="nav-text">Login/Register</span>
                       </a>

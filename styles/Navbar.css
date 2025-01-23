@@ -20,7 +20,7 @@
 }
 
 .custom-link {
-  font-size: clamp(0.2rem, 8vw, 1.6rem);
+  font-size: clamp(0.2rem, 8vw, 1rem);
   text-decoration: none;
   position: relative;
 }
