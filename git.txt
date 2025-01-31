@@ -1,0 +1,14 @@
+git add .
+git commit -m ""
+git push
+
+git init
+git add .
+git commit -m "1/2/2025"
+git branch -M main
+git remote add origin https://github.com/aymanmohamedbarakat/Nooni-Shop.git
+git push -u origin main
+
+git remote add origin https://github.com/aymanmohamedbarakat/Nooni-Shop.git
+git branch -M main
+git push -u origin main

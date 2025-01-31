@@ -1,0 +1,236 @@
+/** Navbar style start **/
+/* body {
+  height: 1000vh;
+  background-color: #000000;
+} */
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+}
+
+.scrolled {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  padding: 20px;
+  transition: all 1s ease;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-link {
+  font-size: clamp(0.2rem, 8vw, 1.6rem);
+  text-decoration: none;
+  position: relative;
+}
+
+.custom-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.custom-link:hover::after {
+  width: 100%;
+}
+
+.dropdown-menuu {
+  border-radius: 0;
+  left: 130% !important;
+}
+
+.dropdown-item {
+  padding: 8px 0;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.dropdown-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.dropdown-item:hover::after {
+  width: 100%;
+}
+
+.dropdown-item:hover {
+  color: #da2929;
+  background-color: transparent;
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 112%;
+  height: 600px;
+  left: -10px;
+  top: 100%;
+  margin-top: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown .dropdown-menu.show {
+  display: block;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 8px 20px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menuu li a,
+.custom-dropdown li a {
+  font-size: clamp(0.2rem, 8vw, 1.2rem);
+}
+
+.custom-dropdown li a:hover {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+}
+
+.custom-dropdown .custom-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-dropdown a:hover {
+  text-decoration: none;
+}
+
+/* Search styles */
+.search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #76767644;
+  color: #767676;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: -1.5rem;
+  height: 50px;
+  width: 100%;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #767676;
+  font-size: 14px;
+}
+
+.search__button {
+  border: none;
+  background-color: #fff;
+  margin-top: 0.1em;
+  cursor: pointer;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+/* Right dropdown styles */
+.right .dropdown-menuu {
+  border-radius: 0;
+  top: 40px;
+  left: -350px !important;
+}
+
+
+.offcanvas:has(.dropdown-menu.show) .custom-dropdown {
+  display: none;
+ }
+ 
+ .offcanvas:has(.dropdown-menu.show) .custom-dropdown:has(.dropdown-menu.show) {
+  display: block;
+ }
+
+ #Product.dropdown-menuu{
+  top: -70px !important;
+}
+
+#Blog.dropdown-menuu{
+  top: -130px !important;
+}
+
+/* Icons styles */
+.icons-svg span {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  top: -5px;
+  right: -10px;
+}
+
+/* Bottom nav styles */
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-text {
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+
+.bottom-nav .btn {
+  padding: clamp(6px, 2vw, 12px) clamp(10px, 3vw, 20px);
+  white-space: nowrap;
+}
+
+.bottom-nav i {
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+}
+
+.bottom-nav .dropdown-menu {
+  min-width: 100%;
+  padding: clamp(4px, 1vw, 8px) 0;
+}
+
+.bottom-nav .dropdown-item {
+  padding: clamp(6px, 2vw, 12px) clamp(10px, 3vw, 20px);
+}
+
+/* Media queries */
+@media (max-width: 576px) {
+  .language-currency-buttons {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+}

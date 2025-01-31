@@ -1,0 +1,15 @@
+<h2>: Product title, Related Products heading => 23px
+<h3>: Price section
+<h5>: Stock information
+<p>: Description, product meta, color selection =>15px
+<span>: For various inline text elements =>16px
+<strong>: For bold text in dimensions section
+
+Navigation and Interactive Tags:
+
+<ul>: Product tabs navigation
+<li>: Tab list items
+<a>: Links and tab navigation =>20px padding 10px 25px
+<button>: Quantity adjustment, Add to Cart, Buy Now => 14px
+
+<a> in product => 15px

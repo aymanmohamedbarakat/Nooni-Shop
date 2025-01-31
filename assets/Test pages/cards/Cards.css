@@ -1,0 +1,238 @@
+/* .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+} */
+
+.product {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 15/19;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-default {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.image-hover {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0; 
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #000000; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    text-align: center; 
+    box-sizing: border-box; 
+    transition: all ease-in-out 0.3s;
+}
+
+.image-container:hover .image-default {
+    opacity: 0;
+}
+
+.image-container:hover .image-hover {
+    opacity: 1;
+}
+
+.image-container:hover .hover-link {
+    opacity: 1;
+}
+
+.hover-link:hover {
+    background-color: #da2929;
+    color: #f0f0f0;
+    transition: all ease-in-out 0.3s;
+}
+
+.labels {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 3;
+}
+
+.label {
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.hot {
+    background-color: #da2929;
+    color: white;
+}
+
+.sold {
+    background-color: #333;
+    color: white;
+}
+
+/* Base positioning for icon container */
+.icon-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    right: 10px;
+    bottom: 50px;
+    gap: 15px;
+    z-index: 2;
+}
+
+/* Base style for all icon links */
+.icon-link {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Heart icon always visible */
+/* .icon-container .icon-link:first-child {
+    opacity: 1;
+    bottom: 50px;
+    visibility: visible;
+} */
+
+/* Other icons initial state */
+/* .icon-container .icon-link:not(:first-child) {
+    opacity: 0;
+    bottom: 20px;
+    transition: all 0.3s ease;
+} */
+
+/* Move container up on hover */
+.image-container:hover .icon-container {
+    bottom: 50px;
+}
+
+/* Show all icons on hover */
+.image-container:hover .icon-container .icon-link {
+    opacity: 1;
+}
+
+/* Add hover effect for all icons */
+.icon-link:hover {
+    background-color: #da2929;
+    color: #ffffff;
+}
+/* Custom tooltip styling */
+.tooltip .tooltip-inner {
+    background-color: #da2929;
+    color: #ffffff;
+    padding: 6px 35px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+/* Custom tooltip arrow styling */
+.tooltip .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #da2929 !important;
+}
+
+.product-info {
+    margin-top: 20px;
+}
+
+.product-title {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.product-title:hover {
+    color: #da2929;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.current-price {
+    color: #000000;
+    font-weight: 600;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .title-section {
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .icon-container {
+        right: 10px;
+    }
+    
+    .label {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    
+    .hover-link {
+        padding: 8px 0;
+        font-size: 14px;
+    }
+}
