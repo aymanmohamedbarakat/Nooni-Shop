@@ -191,7 +191,7 @@
   padding: 1px 6px;
   border-radius: 50%;
   font-size: 12px;
-  top: -5px;
+  top: -8px;
   right: -10px;
 }
 
@@ -227,6 +227,14 @@
   padding: clamp(6px, 2vw, 12px) clamp(10px, 3vw, 20px);
 }
 
+
+/* contact-desktop */
+#contact-desktop.dropdown-menu[data-bs-popper] {
+  width: 320px;
+  top: 187%;
+  left: -220px;
+  margin-top: var(--bs-dropdown-spacer);
+}
 /* Media queries */
 @media (max-width: 576px) {
   .language-currency-buttons {

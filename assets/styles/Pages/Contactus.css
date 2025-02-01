@@ -25,7 +25,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.banner-bg h5 {
+.banner-bg h6 {
   color: var(--text-white);
   position: relative;
   z-index: 1;

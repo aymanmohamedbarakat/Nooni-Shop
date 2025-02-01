@@ -1,45 +1,43 @@
 h2 {
-  font-size: clamp(1rem, 4vw, 1.438rem);
+  font-size: clamp(1rem, 4vw, 1.438rem) !important;
 }
 
 h3 {
-  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-size: clamp(1rem, 3vw, 1.25rem) !important;
 }
 
 h5 {
-  font-size: clamp(0.9rem, 3vw, 1.125rem);
+  font-size: clamp(0.9rem, 3vw, 1.125rem) !important;
 }
 
 p {
-  font-size: clamp(0.9rem, 3vw, 0.938rem);
+  font-size: clamp(0.9rem, 3vw, 0.938rem) !important;
   color: #999;
 }
 
-span {
-  font-size: clamp(1rem, 3vw, 1rem);
-}
+
 
 /* Navigation Tags */
 ul {
-  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-size: clamp(1rem, 3vw, 1.25rem) !important;
 }
 
 li {
-  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-size: clamp(.5rem, 3vw, 1rem) !important;
 }
 
 button {
-  font-size: clamp(0.875rem, 3vw, 1rem);
+  font-size: clamp(0.875rem, 3vw, 1rem) !important;
 }
 
 .product-title {
-  font-size: clamp(0.9rem, 3vw, 0.938rem);
+  font-size: clamp(0.9rem, 3vw, 0.938rem) !important;
 }
 
-.fas,
+
 .far,
 .fab {
-  font-size: clamp(0.9rem, 3vw, 0.938rem);
+  font-size: clamp(0.9rem, 3vw, 1.2rem) !important;
 }
 
 .custom-indicators {

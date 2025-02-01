@@ -125,7 +125,7 @@
               <div
                 class="dropdown-menu p-4"
                 aria-labelledby="dropdownMenu2"
-                style="width: 350px; height: 250px"
+                id="contact-desktop"
               >
                 <form class="d-flex align-items-center flex-column g-5">
                   <div class="col-12 mb-4">
@@ -150,8 +150,7 @@
                     <div class="col-6 submit">
                       <button
                         type="submit"
-                        class="btn btn-dark w-100"
-                        style="border-radius: 0"
+                        class="btn btn-dark w-100 rounded-0"
                       >
                         Sign in
                       </button>
@@ -418,25 +417,29 @@
         id="offcanvasExampleMobile"
         aria-labelledby="offcanvasExampleLabel"
       >
-      <div class="offcanvas-header position-relative border-bottom py-4">
-        <div
-          class="offcanvas-title mt-5 d-flex justify-content-center"
-          id="offcanvasLabel"
-        >
-          <img src="../assets/images/Header/logo.png" width="50%" alt="Logo" />
+        <div class="offcanvas-header position-relative border-bottom py-4">
+          <div
+            class="offcanvas-title mt-5 d-flex justify-content-center"
+            id="offcanvasLabel"
+          >
+            <img
+              src="../assets/images/Header/logo.png"
+              width="50%"
+              alt="Logo"
+            />
+          </div>
+          <div
+            class="offcanvas-title close-offCanavas position-absolute"
+            id="offcanvasCloseBtn"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
         </div>
-        <div
-          class="offcanvas-title close-offCanavas position-absolute"
-          id="offcanvasCloseBtn"
-        >
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-      </div>
 
         <div class="container">
           <div class="row col-12 mb-3">
@@ -833,11 +836,11 @@
 
             <div class="aboutus-title mb-5">
               <h4 class="text-center">About Noon’i</h4>
-              <h5 class="text-center">
+              <h6 class="text-center">
                 Noon’i was established in 1990, consectetur eleifend commodo at,
                 consectetur eu justo. Sed viverra consectetur risus nec
                 ultricies.
-              </h5>
+              </h6>
             </div>
           </div>
         </div>
@@ -936,7 +939,7 @@
                   </div>
                 </div>
 
-                <!-- Team Member 2 -->
+                <!-- Team Member 3 -->
                 <div class="swiper-slide">
                   <div class="team-member">
                     <img
@@ -959,7 +962,7 @@
                   </div>
                 </div>
 
-                <!-- Team Member 2 -->
+                <!-- Team Member 4 -->
                 <div class="swiper-slide">
                   <div class="team-member">
                     <img
@@ -982,7 +985,7 @@
                   </div>
                 </div>
 
-                <!-- Team Member 2 -->
+                <!-- Team Member 1 -->
                 <div class="swiper-slide">
                   <div class="team-member">
                     <img

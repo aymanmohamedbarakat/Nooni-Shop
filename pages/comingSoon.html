@@ -128,7 +128,7 @@
                 <div
                   class="dropdown-menu p-4"
                   aria-labelledby="dropdownMenu2"
-                  style="width: 350px; height: 250px"
+                  id="contact-desktop"
                 >
                   <form class="d-flex align-items-center flex-column g-5">
                     <div class="col-12 mb-4">
@@ -153,8 +153,7 @@
                       <div class="col-6 submit">
                         <button
                           type="submit"
-                          class="btn btn-dark w-100"
-                          style="border-radius: 0"
+                          class="btn btn-dark w-100 rounded-0"
                         >
                           Sign in
                         </button>
@@ -403,25 +402,29 @@
           id="offcanvasExampleMobile"
           aria-labelledby="offcanvasExampleLabel"
         >
-        <div class="offcanvas-header position-relative border-bottom py-4">
-          <div
-            class="offcanvas-title mt-5 d-flex justify-content-center"
-            id="offcanvasLabel"
-          >
-            <img src="../assets/images/Header/logo.png" width="50%" alt="Logo" />
+          <div class="offcanvas-header position-relative border-bottom py-4">
+            <div
+              class="offcanvas-title mt-5 d-flex justify-content-center"
+              id="offcanvasLabel"
+            >
+              <img
+                src="../assets/images/Header/logo.png"
+                width="50%"
+                alt="Logo"
+              />
+            </div>
+            <div
+              class="offcanvas-title close-offCanavas position-absolute"
+              id="offcanvasCloseBtn"
+            >
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
           </div>
-          <div
-            class="offcanvas-title close-offCanavas position-absolute"
-            id="offcanvasCloseBtn"
-          >
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-        </div>
 
           <div class="container">
             <div class="row col-12 mb-3">
@@ -811,7 +814,7 @@
             </div>
           </div>
           <div class="row align-items-center">
-            <div class="col-sm-10 col-md-6 col-lg-6 svg-img p-5">
+            <div class="col-sm-10 col-md-6 col-lg-6 svg-img">
               <svg
                 viewBox="0 0 834 690"
                 fill="none"
@@ -1024,14 +1027,14 @@
             </div>
           </div>
         </div>
-        <section class="comingSoon-footer">
+        <section class="comingSoon-footer mt-5">
           <div class="container text-center">
-            <span>Nooni – Elementor WooCommerce</span>
+            <span class="">Nooni – Elementor WooCommerce</span>
           </div>
         </section>
       </main>
 
-      <footer class="footer-area mb-2">
+      <footer class="footer-area mt-2">
         <div class="container">
           <div class="row mt-4 border-top py-5">
             <!-- Logo & Contact Section -->
@@ -1046,16 +1049,16 @@
                 />
               </div>
               <div class="footer-contact">
-                <p>Text: +00(234)23-45-666</p>
-                <p>Mon – Fri: 8 am – 8 pm</p>
-                <p>Sat – Sun: 8 am – 7 pm</p>
+                <p class="p-small">Text: +00(234)23-45-666</p>
+                <p class="p-small">Mon – Fri: 8 am – 8 pm</p>
+                <p class="p-small">Sat – Sun: 8 am – 7 pm</p>
               </div>
             </div>
 
             <!-- Middle Sections Wrapper -->
             <div class="mid-section d-flex col-lg-5 col-md-12">
               <!-- About Section -->
-              <div class="col-lg-3 col-md-3">
+              <div class="col-lg-6 col-md-6">
                 <h6 class="footer-title">ABOUT</h6>
                 <ul class="footer-links">
                   <li><a href="#">Our Story</a></li>
@@ -1066,7 +1069,7 @@
               </div>
 
               <!-- Customer Services Section -->
-              <div class="col-lg-5 col-md-5">
+              <div class="col-lg-6 col-md-6">
                 <h6 class="footer-title">CUSTOMER SERVICES</h6>
                 <ul class="footer-links">
                   <li><a href="#">Contact Us</a></li>
@@ -1078,10 +1081,10 @@
               </div>
             </div>
 
-            <!-- Newsletter  Section -->
-            <div class="Newsletter col-lg-4 col-md-7">
+            <!-- Newsletter Section -->
+            <div class="Newsletter col-lg-4 col-md-6">
               <h6 class="footer-title">SIGN UP FOR EMAILS</h6>
-              <p class="newsletter-text">
+              <p class="p-small">
                 Enjoy 15% off* your first order when sign up to our newsletter
               </p>
               <form class="newsletter-form">
@@ -1097,7 +1100,7 @@
                   </button>
                 </div>
               </form>
-              <div class="social-icons mt-4">
+              <div class="social-icons mt-2">
                 <a href="#" class="social-icon"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
@@ -1124,7 +1127,7 @@
               </ul>
             </div>
             <div class="col-md-4 col-12 text-center order-1 order-md-2">
-              <p class="copyright">© Nooni. All Rights Reserved.</p>
+              <p class="p-small">© Nooni. All Rights Reserved.</p>
             </div>
             <div
               class="col-md-4 text-center text-lg-end mt-lg-0 mt-3 payment-methodss order-3"

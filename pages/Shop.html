@@ -126,7 +126,7 @@
               <div
                 class="dropdown-menu p-4"
                 aria-labelledby="dropdownMenu2"
-                style="width: 350px; height: 250px"
+                id="contact-desktop"
               >
                 <form class="d-flex align-items-center flex-column g-5">
                   <div class="col-12 mb-4">
@@ -151,8 +151,7 @@
                     <div class="col-6 submit">
                       <button
                         type="submit"
-                        class="btn btn-dark w-100"
-                        style="border-radius: 0"
+                        class="btn btn-dark w-100 rounded-0"
                       >
                         Sign in
                       </button>
@@ -415,25 +414,29 @@
         id="offcanvasExampleMobile"
         aria-labelledby="offcanvasExampleLabel"
       >
-      <div class="offcanvas-header position-relative border-bottom py-4">
-        <div
-          class="offcanvas-title mt-5 d-flex justify-content-center"
-          id="offcanvasLabel"
-        >
-          <img src="../assets/images/Header/logo.png" width="50%" alt="Logo" />
+        <div class="offcanvas-header position-relative border-bottom py-4">
+          <div
+            class="offcanvas-title mt-5 d-flex justify-content-center"
+            id="offcanvasLabel"
+          >
+            <img
+              src="../assets/images/Header/logo.png"
+              width="50%"
+              alt="Logo"
+            />
+          </div>
+          <div
+            class="offcanvas-title close-offCanavas position-absolute"
+            id="offcanvasCloseBtn"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
         </div>
-        <div
-          class="offcanvas-title close-offCanavas position-absolute"
-          id="offcanvasCloseBtn"
-        >
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-      </div>
         <div class="container">
           <div class="row col-12 mb-3">
             <div class="dropdown custom-dropdown">
@@ -817,10 +820,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Bed</a>
-                    </h3>
-                    <p class="product-description">7 products</p>
+                    </p>
+                    <p class="product-description p-caption">7 products</p>
                   </div>
                 </div>
               </div>
@@ -835,10 +838,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Bedroom Furniture</a>
-                    </h3>
-                    <p class="product-description">18 products</p>
+                    </p>
+                    <p class="product-description p-caption">18 products</p>
                   </div>
                 </div>
               </div>
@@ -853,10 +856,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html"> Cabinet</a>
-                    </h3>
-                    <p class="product-description">5 products</p>
+                    </p>
+                    <p class="product-description p-caption">5 products</p>
                   </div>
                 </div>
               </div>
@@ -871,10 +874,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Chair</a>
-                    </h3>
-                    <p class="product-description">12 products</p>
+                    </p>
+                    <p class="product-description p-caption">12 products</p>
                   </div>
                 </div>
               </div>
@@ -889,10 +892,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html"></a>Dining & Kitchen
-                    </h3>
-                    <p class="product-description">25 products</p>
+                    </p>
+                    <p class="product-description p-caption">25 products</p>
                   </div>
                 </div>
               </div>
@@ -907,10 +910,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Home Office</a>
-                    </h3>
-                    <p class="product-description">23 products</p>
+                    </p>
+                    <p class="product-description p-caption">23 products</p>
                   </div>
                 </div>
               </div>
@@ -925,10 +928,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Lamp</a>
-                    </h3>
-                    <p class="product-description">7 products</p>
+                    </p>
+                    <p class="product-description p-caption">7 products</p>
                   </div>
                 </div>
               </div>
@@ -943,10 +946,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Living Room</a>
-                    </h3>
-                    <p class="product-description">24 products</p>
+                    </p>
+                    <p class="product-description p-caption">24 products</p>
                   </div>
                 </div>
               </div>
@@ -961,10 +964,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">New & Now</a>
-                    </h3>
-                    <p class="product-description">33 products</p>
+                    </p>
+                    <p class="product-description p-caption">33 products</p>
                   </div>
                 </div>
               </div>
@@ -979,10 +982,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Outdoor Lounge</a>
-                    </h3>
-                    <p class="product-description">23 products</p>
+                    </p>
+                    <p class="product-description p-caption">23 products</p>
                   </div>
                 </div>
               </div>
@@ -997,10 +1000,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Sofa</a>
-                    </h3>
-                    <p class="product-description">8 products</p>
+                    </p>
+                    <p class="product-description p-caption">8 products</p>
                   </div>
                 </div>
               </div>
@@ -1015,10 +1018,10 @@
                     />
                   </div>
                   <div class="product-info">
-                    <h3 class="product-title">
+                    <p class="product-title p-small">
                       <a href="./Product.html">Table</a>
-                    </h3>
-                    <p class="product-description">5 products</p>
+                    </p>
+                    <p class="product-description p-caption">5 products</p>
                   </div>
                 </div>
               </div>
@@ -1053,7 +1056,7 @@
                 </label>
               </div>
 
-              <select class="form-select col-12 w-100">
+              <select class="form-select col-12 w-50">
                 <option selected>Sort by latest</option>
                 <option>Price: Low to High</option>
                 <option>Price: High to Low</option>
@@ -1117,7 +1120,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Wood Outdoor Adirondack Chair</a
                       >
                       <div class="price">
@@ -1176,7 +1179,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Solid Wood Bar Storage Cabinet</a
                       >
                       <div class="price">
@@ -1234,7 +1237,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Solid Wood Bed With Fabric Headboard</a
                       >
                       <div class="price">
@@ -1296,7 +1299,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Floor Lamp With Polyester Shade</a
                       >
                       <div class="price">
@@ -1357,7 +1360,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Garden Chair With Armrests</a
                       >
                       <div class="price">
@@ -1418,7 +1421,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Led Steel Floor Lamp</a
                       >
                       <div class="price">
@@ -1477,7 +1480,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Teak Garden Chair With Armrests</a
                       >
                       <div class="price">
@@ -1538,7 +1541,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Rectangular Metal And Stone Table</a
                       >
                       <div class="price">
@@ -1601,7 +1604,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >2-Piece Left-Arm Sectional Sofa</a
                       >
                       <div class="price">
@@ -1663,7 +1666,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Contemporary Steel Floor Lamp</a
                       >
                       <div class="price">
@@ -1726,7 +1729,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Bar Cabinet With Integrated Lighting</a
                       >
                       <div class="price">
@@ -1785,7 +1788,7 @@
                       >
                     </div>
                     <div class="product-info mt-3">
-                      <a href="./Product.html" class="product-title"
+                      <a href="./Product.html" class="product-title p-caption"
                         >Rectangular Wooden Garden Table</a
                       >
                       <div class="price">
@@ -1823,7 +1826,7 @@
       </div>
     </main>
 
-    <footer class="footer-area mb-2">
+    <footer class="footer-area mt-2">
       <div class="container">
         <div class="row mt-4 border-top py-5">
           <!-- Logo & Contact Section -->
@@ -1838,16 +1841,16 @@
               />
             </div>
             <div class="footer-contact">
-              <p>Text: +00(234)23-45-666</p>
-              <p>Mon – Fri: 8 am – 8 pm</p>
-              <p>Sat – Sun: 8 am – 7 pm</p>
+              <p class="p-small">Text: +00(234)23-45-666</p>
+              <p class="p-small">Mon – Fri: 8 am – 8 pm</p>
+              <p class="p-small">Sat – Sun: 8 am – 7 pm</p>
             </div>
           </div>
 
           <!-- Middle Sections Wrapper -->
           <div class="mid-section d-flex col-lg-5 col-md-12">
             <!-- About Section -->
-            <div class="col-lg-3 col-md-3">
+            <div class="col-lg-6 col-md-6">
               <h6 class="footer-title">ABOUT</h6>
               <ul class="footer-links">
                 <li><a href="#">Our Story</a></li>
@@ -1858,7 +1861,7 @@
             </div>
 
             <!-- Customer Services Section -->
-            <div class="col-lg-5 col-md-5">
+            <div class="col-lg-6 col-md-6">
               <h6 class="footer-title">CUSTOMER SERVICES</h6>
               <ul class="footer-links">
                 <li><a href="#">Contact Us</a></li>
@@ -1870,10 +1873,10 @@
             </div>
           </div>
 
-          <!-- Newsletter  Section -->
-          <div class="Newsletter col-lg-4 col-md-7">
+          <!-- Newsletter Section -->
+          <div class="Newsletter col-lg-4 col-md-6">
             <h6 class="footer-title">SIGN UP FOR EMAILS</h6>
-            <p class="newsletter-text">
+            <p class="p-small">
               Enjoy 15% off* your first order when sign up to our newsletter
             </p>
             <form class="newsletter-form">
@@ -1914,7 +1917,7 @@
             </ul>
           </div>
           <div class="col-md-4 col-12 text-center order-1 order-md-2">
-            <p class="copyright">© Nooni. All Rights Reserved.</p>
+            <p class="p-small">© Nooni. All Rights Reserved.</p>
           </div>
           <div
             class="col-md-4 text-center text-lg-end mt-lg-0 mt-3 payment-methodss order-3"

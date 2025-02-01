@@ -126,7 +126,7 @@
               <div
                 class="dropdown-menu p-4"
                 aria-labelledby="dropdownMenu2"
-                style="width: 350px; height: 250px"
+                id="contact-desktop"
               >
                 <form class="d-flex align-items-center flex-column g-5">
                   <div class="col-12 mb-4">
@@ -151,8 +151,7 @@
                     <div class="col-6 submit">
                       <button
                         type="submit"
-                        class="btn btn-dark w-100"
-                        style="border-radius: 0"
+                        class="btn btn-dark w-100 rounded-0"
                       >
                         Sign in
                       </button>
@@ -419,25 +418,29 @@
         id="offcanvasExampleMobile"
         aria-labelledby="offcanvasExampleLabel"
       >
-      <div class="offcanvas-header position-relative border-bottom py-4">
-        <div
-          class="offcanvas-title mt-5 d-flex justify-content-center"
-          id="offcanvasLabel"
-        >
-          <img src="../assets/images/Header/logo.png" width="50%" alt="Logo" />
+        <div class="offcanvas-header position-relative border-bottom py-4">
+          <div
+            class="offcanvas-title mt-5 d-flex justify-content-center"
+            id="offcanvasLabel"
+          >
+            <img
+              src="../assets/images/Header/logo.png"
+              width="50%"
+              alt="Logo"
+            />
+          </div>
+          <div
+            class="offcanvas-title close-offCanavas position-absolute"
+            id="offcanvasCloseBtn"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
         </div>
-        <div
-          class="offcanvas-title close-offCanavas position-absolute"
-          id="offcanvasCloseBtn"
-        >
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-      </div>
 
         <div class="container">
           <div class="row col-12 mb-3">
@@ -714,7 +717,7 @@
         aria-labelledby="cartOffcanvasLabel"
       >
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="cartOffcanvasLabel">Shopping Cart</h5>
+          <h6 class="offcanvas-title" id="cartOffcanvasLabel">Shopping Cart</h6>
           <button
             type="button"
             class="btn-close"
@@ -735,7 +738,7 @@
           >
             <path d="M150 0H0V150H150V0Z" fill="white"></path>
             <path
-              d="M34.5824 74.3272L33.4081 68.3582C32.1926 62.179 36.9225 56.428 43.2201 56.428H131.802C138.025 56.428 142.737 62.0523 141.647 68.1798L130.534 130.633C129.685 135.406 125.536 138.882 120.689 138.882H56.6221C51.9655 138.882 47.9253 135.668 46.8782 131.13L45.1458 123.623"
+              d="M34.5824 74.3272L33.4081 68.3582C32.1926 62.179 36.9225 56.428 43.2201 56.428H131.802C138.025 56.428 142.737 62.0523 141.647 68.1798L130.534 130.633C129.685 135.406 125.536 138.882 120.689 138.882h66.6221C51.9655 138.882 47.9253 135.668 46.8782 131.13L45.1458 123.623"
               stroke="#808080"
               stroke-width="3"
               stroke-linecap="round"
@@ -775,7 +778,7 @@
               fill="#808080"
             ></path>
           </svg>
-          <h5>Your cart is currently empty</h5>
+          <h6>Your cart is currently empty</h6>
         </div>
       </div>
 
@@ -787,9 +790,9 @@
         aria-labelledby="searchOffcanvasLabel"
       >
         <div class="offcanvas-header mt-4 px-4 py-3">
-          <h5 class="offcanvas-title" id="searchOffcanvasLabel">
+          <h6 class="offcanvas-title" id="searchOffcanvasLabel">
             Search for products (0)
-          </h5>
+          </h6>
           <button
             type="button"
             class="btn-close"
@@ -824,7 +827,7 @@
       <section class="contact-section">
         <div class="banner">
           <div class="banner-bg">
-            <h5>Get in touch with us. Send us a message</h5>
+            <h6>Get in touch with us. Send us a message</h6>
           </div>
         </div>
 
@@ -832,26 +835,26 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <h5>Contact Us</h5>
+                <h6>Contact Us</h6>
                 <div class="contact-info mt-5">
-                  <h5>Call to Us:</h5>
-                  <p>We're available 24/7, 7 days a week.</p>
-                  <p>+08 9229 8228</p>
+                  <h6>Call to Us:</h6>
+                  <p class="p-small">We're available 24/7, 7 days a week.</p>
+                  <p class="p-caption">+08 9229 8228</p>
 
-                  <h5>Write to Us:</h5>
-                  <p>
+                  <h6>Write to Us:</h6>
+                  <p class="p-small">
                     Fill out our form and we will contact you within 24 hours.
                   </p>
-                  <p>Email: Support1234@Jaroti</p>
+                  <p class="p-caption">Email: Support1234@Jaroti</p>
 
-                  <h5>Headquarter:</h5>
-                  <p>Monday - Friday: 9:00-20:00</p>
-                  <p>Saturday: 11:00 - 15:00</p>
-                  <p>123 Atlantic, Brooklyn, New York, USA</p>
+                  <h6>Headquarter:</h6>
+                  <p class="p-caption">Monday - Friday: 9:00-20:00</p>
+                  <p class="p-caption">Saturday: 11:00 - 15:00</p>
+                  <p class="p-caption">123 Atlantic, Brooklyn, New York, USA</p>
                 </div>
               </div>
               <div class="col-md-8">
-                <h5>We would love to hear from you.</h5>
+                <h6>We would love to hear from you.</h6>
                 <form class="mt-5">
                   <div class="row">
                     <div class="col-md-6 mb-3">
