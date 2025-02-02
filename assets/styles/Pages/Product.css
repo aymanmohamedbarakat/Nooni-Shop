@@ -15,15 +15,13 @@ p {
   color: #999;
 }
 
-
-
 /* Navigation Tags */
 ul {
   font-size: clamp(1rem, 3vw, 1.25rem) !important;
 }
 
 li {
-  font-size: clamp(.5rem, 3vw, 1rem) !important;
+  font-size: clamp(0.5rem, 3vw, 1rem) !important;
 }
 
 button {
@@ -33,7 +31,6 @@ button {
 .product-title {
   font-size: clamp(0.9rem, 3vw, 0.938rem) !important;
 }
-
 
 .far,
 .fab {
@@ -108,7 +105,6 @@ button {
   transition: all 0.3s ease;
   background-color: var(--text-red) !important;
 }
-
 
 .image-container {
   position: relative;
