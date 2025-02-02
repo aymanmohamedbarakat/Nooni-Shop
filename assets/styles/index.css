@@ -673,6 +673,7 @@ h2 {
 /* Blog Start */
 .tags-blog-date {
   padding: 0 10px;
+  max-width: fit-content;
 }
 
 .tags-blog-profile img {
@@ -794,8 +795,10 @@ h2 {
 
 
   .blog-img-container {
+    margin: auto;
     width: 230px;
-    height: 230px; /* Consistent height for smaller screens */
+    height: 230px;
+    flex: 1; 
 }
   .tags span {
     font-size: 12px;
