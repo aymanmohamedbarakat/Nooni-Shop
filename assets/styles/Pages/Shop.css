@@ -21,13 +21,12 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: space-around;
 }
 
 .img-container {
   width: 100px;
   height: 100px;
-  flex-shrink: 0;
   border-radius: 50%;
   overflow: hidden;
   background: var(--text-white);
@@ -72,18 +71,15 @@
   }
 
   .img-container {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
   .form-select {
     width: 100% !important;
   }
 }
 
-.product {
-  display: flex;
-  flex-direction: column;
-}
+
 
 .image-container {
   position: relative;
@@ -301,6 +297,7 @@
 
 @media (max-width: 576px) {
   .icon-container {
+    right: 6px;
     top: 6px;
   }
 

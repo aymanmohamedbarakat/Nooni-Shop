@@ -1,9 +1,9 @@
-
 const swiper = new Swiper(".team-swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
-  loopAdditionalSlides: 4,
+  loopFillGroupWithBlank: true,
+  loopAdditionalSlides: 1,
   speed: 1000,
   autoplay: {
     delay: 3000,
@@ -23,12 +23,12 @@ const swiper = new Swiper(".team-swiper", {
 });
 
 
-
 const brandsSwiper = new Swiper(".brands-swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
-  loopAdditionalSlides: 3,
+  loopFillGroupWithBlank: true,
+  loopAdditionalSlides: 1,
   speed: 1000,
   autoplay: {
     delay: 3000,
@@ -36,13 +36,10 @@ const brandsSwiper = new Swiper(".brands-swiper", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
-    768: {
+    968: {
       slidesPerView: 4,
-    },
-    1024: {
-      slidesPerView: 5,
     },
     1200: {
       slidesPerView: 6,

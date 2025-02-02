@@ -229,6 +229,21 @@
 
 .brands-section {
   background-color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.brands-swiper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand-item {
@@ -236,10 +251,9 @@
   text-align: center;
   opacity: 0.6;
   transition: opacity 0.3s ease;
-}
-
-.brand-item:hover {
-  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand-item img {
@@ -247,8 +261,5 @@
   height: auto;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
-}
-
-.brand-item:hover img {
-  filter: grayscale(0%);
+  margin: 0 auto;
 }
